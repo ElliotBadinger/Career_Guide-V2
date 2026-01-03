@@ -1,15 +1,19 @@
-import { useState } from 'react';
 import { useI18n } from '../hooks/useI18n';
+import { getSaSchoolTermStatus } from '../utils/academicCalendar';
 
 export function QuestionRenderer({ question, value, onChange }) {
     const { t } = useI18n();
+    const { inTerm } = getSaSchoolTermStatus();
+
+    const labelKey = !inTerm && question.labelHoliday ? question.labelHoliday : question.label;
+    const helperKey = !inTerm && question.helperHoliday ? question.helperHoliday : question.helper;
 
     const renderQuestion = () => {
         switch (question.type) {
             case 'single':
-                return <SingleChoice question={question} value={value} onChange={onChange} t={t} />;
+                return <SingleChoice question={question} value={value} onChange={onChange} t={t} inTerm={inTerm} />;
             case 'multi':
-                return <MultiChoice question={question} value={value} onChange={onChange} t={t} />;
+                return <MultiChoice question={question} value={value} onChange={onChange} t={t} inTerm={inTerm} />;
             case 'text':
                 return <TextInput question={question} value={value} onChange={onChange} t={t} />;
             case 'textarea':
@@ -29,15 +33,18 @@ export function QuestionRenderer({ question, value, onChange }) {
                 )}
                 <div>
                     <h2 className="text-lg font-semibold text-gray-800">
-                        {t(question.label)}
+                        {t(labelKey)}
                         {!question.required && (
                             <span className="text-gray-500 text-sm font-normal ml-2">
                                 {t('questions.optional')}
                             </span>
                         )}
                     </h2>
-                    {question.helper && (
-                        <p className="text-gray-600 text-sm mt-1">{t(question.helper)}</p>
+                    {question.intro && (
+                        <p className="text-gray-700 text-md mt-2 mb-2 italic">{t(question.intro)}</p>
+                    )}
+                    {helperKey && (
+                        <p className="text-gray-600 text-sm mt-1">{t(helperKey)}</p>
                     )}
                 </div>
             </div>
@@ -47,7 +54,7 @@ export function QuestionRenderer({ question, value, onChange }) {
     );
 }
 
-function SingleChoice({ question, value, onChange, t }) {
+function SingleChoice({ question, value, onChange, t, inTerm }) {
     return (
         <div className="space-y-2">
             {question.options.map((option) => (
@@ -58,7 +65,7 @@ function SingleChoice({ question, value, onChange, t }) {
                     onClick={() => onChange(option.value)}
                 >
                     {option.icon && <span className="icon">{option.icon}</span>}
-                    <span className="flex-1">{t(option.label)}</span>
+                    <span className="flex-1">{t(!inTerm && option.labelHoliday ? option.labelHoliday : option.label)}</span>
                     {value === option.value && <span>✓</span>}
                 </button>
             ))}
@@ -66,7 +73,7 @@ function SingleChoice({ question, value, onChange, t }) {
     );
 }
 
-function MultiChoice({ question, value = [], onChange, t }) {
+function MultiChoice({ question, value = [], onChange, t, inTerm }) {
     const maxSelections = question.maxSelections || Infinity;
 
     const handleToggle = (optionValue) => {
@@ -108,7 +115,7 @@ function MultiChoice({ question, value = [], onChange, t }) {
                         disabled={disabled}
                     >
                         {option.icon && <span className="icon">{option.icon}</span>}
-                        <span className="flex-1">{t(option.label)}</span>
+                        <span className="flex-1">{t(!inTerm && option.labelHoliday ? option.labelHoliday : option.label)}</span>
                         <span className={`w-5 h-5 rounded border-2 flex items-center justify-center ${selected ? 'bg-indigo-500 border-indigo-500 text-white' : 'border-gray-300'
                             }`}>
                             {selected && '✓'}

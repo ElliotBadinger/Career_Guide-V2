@@ -50,18 +50,36 @@
                 "over21": "Ngaphezu kuka-21"
             }
         },
-        "attendance": {
-            "label": "Ingabe uya esikoleni izinsuku eziningi?",
+        "attentionCheck": {
+            "label": "Ukuhlola okusheshayo: sicela ukhethe \"Ngezinye izikhathi\" kulento.",
+            "helper": "Lokhu kusisiza ukuqinisekisa ukuthi inhlolovo isebenza kahle.",
             "options": {
-                "always": "Yebo, cishe nsuku zonke",
-                "often": "Izinsuku eziningi, kodwa ngiyaphuthelwa ezinye",
-                "sometimes": "Ezinye izinsuku, kodwa ngiphuthelwa eziningi",
-                "rarely": "Ngiyaphutha kakhulu esikoleni",
+                "rarely": "Kancane",
+                "sometimes": "Ngezinye izikhathi",
+                "often": "Kaningi"
+            }
+        },
+        "attendance": {
+            "label": "Ngenyanga edlule, zingaki izinsuku ongayanga esikoleni?",
+            "labelHoliday": "Ngesikhathi sethemu lokugcina lesikole, zingaki izinsuku ongayanga esikoleni ngenyanga ejwayelekile?",
+            "options": {
+                "always": "Izinsuku ezi-0 engiphuthe ngazo ngenyanga edlule",
+                "often": "Izinsuku ezi-1 kuya kwezi-2 engiphuthe ngazo ngenyanga edlule",
+                "sometimes": "Izinsuku ezi-3 kuya kwezi-5 engiphuthe ngazo ngenyanga edlule",
+                "rarely": "Ngaphezu kwezinsuku ezi-5 engiphuthe ngazo",
+                "notInSchool": "Angikho esikoleni njengamanje"
+            },
+            "optionsHoliday": {
+                "always": "Izinsuku ezi-0 engiphuthe ngazo ngenyanga yesikole ejwayelekile",
+                "often": "Izinsuku ezi-1 kuya kwezi-2 engiphuthe ngazo ngenyanga yesikole ejwayelekile",
+                "sometimes": "Izinsuku ezi-3 kuya kwezi-5 engiphuthe ngazo ngenyanga yesikole ejwayelekile",
+                "rarely": "Ngaphezu kwezinsuku ezi-5 engiphuthe ngazo ngenyanga yesikole ejwayelekile",
                 "notInSchool": "Angikho esikoleni njengamanje"
             }
         },
         "studyHabits": {
-            "label": "Ingabe uyafunda noma wenze umsebenzi wasekhaya ekhaya?",
+            "label": "Ezinsukwini ezi-7 ezedlule, uvame kangakanani ukufunda noma ukwenza umsebenzi wasekhaya ekhaya?",
+            "labelHoliday": "Ngesikhathi sethemu lokugcina lesikole, ngeviki ejwayelekile, uvame kangakanani ukufunda noma ukwenza umsebenzi wasekhaya ekhaya?",
             "options": {
                 "daily": "Yebo, nsuku zonke",
                 "often": "Izikhathi ezimbalwa ngesonto",
@@ -89,7 +107,8 @@
             }
         },
         "classParticipation": {
-            "label": "Ingabe uyabuza noma uphendule imibuzo ekilasini?",
+            "label": "Ezinsukwini ezi-7 ezedlule, uvame kangakanani ukubuza noma ukuphendula imibuzo ekilasini?",
+            "labelHoliday": "Ngesikhathi sethemu lokugcina lesikole, ngeviki ejwayelekile, uvame kangakanani ukubuza noma ukuphendula imibuzo ekilasini?",
             "options": {
                 "often": "Yebo, kaningi",
                 "sometimes": "Ngezinye izikhathi",
@@ -163,6 +182,11 @@
                 "both": "Ngithanda kokubili ngokulinganayo"
             }
         },
+        "learningExample": {
+            "label": "Nika isibonelo esifushane sokuthi wafunda kanjani okuthile muva nje.",
+            "helper": "Imisho eyi-1 kuya kweyi-2 iyanele.",
+            "placeholder": "Isibonelo: Ngafunda ngokubuka umzala wami elungisa ibhayisikili."
+        },
         "workEnvironment": {
             "label": "Hlobo luni lwendawo yokusebenza oluzwakala kahle?",
             "options": {
@@ -189,12 +213,28 @@
                 "sports": "Ezemidlalo noma i-fitness"
             }
         },
+        "interestCertainty": {
+            "label": "Uqiniseke kangakanani ngalezi zintshisekelo?",
+            "options": {
+                "high": "Phezulu - ngiqinisekile",
+                "medium": "Maphakathi - ngiqinisekile kancane",
+                "low": "Phansi - angiqinisekile okwamanje"
+            }
+        },
         "routineVsVariety": {
             "label": "Ukhetha ini?",
             "options": {
                 "routine": "Inqubo efanayo nsuku zonke",
                 "variety": "Usuku ngalunye luhlukile",
                 "noPreference": "Akunandaba kimi"
+            }
+        },
+        "workValuesForced": {
+            "label": "Yikuphi okubaluleke kakhulu kuwe?",
+            "intro": "Kunzima ukukhetha, kodwa khetha okukodwa.",
+            "options": {
+                "team": "Ukuba yingxenye yeqembu elinqobayo",
+                "autonomy": "Ukuba uchwepheshe onquma"
             }
         },
         "strengths": {
@@ -211,7 +251,7 @@
         },
         "strengthExample": {
             "label": "Ungasinikeza isibonelo sokuthi wasebenzisa nini lamandla?",
-            "helper": "Ngisho nesibonelo esincane kulungile.",
+            "helper": "Imisho eyi-1 kuya kweyi-2 iyanele.",
             "placeholder": "Isibonelo: Ngalungisa ifoni yomfowethu..."
         },
         "valuesImportant": {
@@ -234,6 +274,19 @@
                 "improveMarks": "Ukuthola amamaki angcono",
                 "figureOut": "Ukuthola ukuthi ngifuna ukwenzani"
             }
+        },
+        "goalCertainty": {
+            "label": "Uqiniseke kangakanani ngale njongo?",
+            "options": {
+                "high": "Phezulu - ngiqinisekile",
+                "medium": "Maphakathi - ngiqinisekile kancane",
+                "low": "Phansi - angiqinisekile okwamanje"
+            }
+        },
+        "goalExample": {
+            "label": "Nika isibonelo esifushane sesinyathelo ongathatha ngale njongo.",
+            "helper": "Imisho eyi-1 kuya kweyi-2 iyanele.",
+            "placeholder": "Isibonelo: Ngizobuza uthisha ngezidingo."
         },
         "transportAccess": {
             "label": "Kulula ukufika esikoleni noma ekolishi?",
@@ -305,7 +358,7 @@
             }
         },
         "stressFrequency": {
-            "label": "Uvame kangakanani ukuzizwa ucindezelekile noma ukhathazekile?",
+            "label": "Ezinsukwini ezi-7 ezedlule, uvame kangakanani ukuzizwa ucindezelekile noma ukhathazekile?",
             "options": {
                 "rarely": "Kancane",
                 "sometimes": "Ngezinye izikhathi",
@@ -314,7 +367,7 @@
             }
         },
         "sadnessFrequency": {
-            "label": "Uvame kangakanani ukuzizwa udangele noma uphansi?",
+            "label": "Ezinsukwini ezi-7 ezedlule, uvame kangakanani ukuzizwa udangele noma uphansi?",
             "options": {
                 "rarely": "Kancane",
                 "sometimes": "Ngezinye izikhathi",

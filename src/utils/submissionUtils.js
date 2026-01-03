@@ -4,6 +4,7 @@
  */
 
 import { calculateScores } from '../engine/scoringEngine';
+import { assessDataQuality } from '../engine/qualityEngine';
 
 const QUEUE_KEY = 'career_guide_submission_queue';
 const SUBMIT_ENDPOINT = import.meta.env.VITE_SUBMIT_ENDPOINT || '/.netlify/functions/submit';
@@ -128,6 +129,13 @@ export function generateSubmissionPayload(answers, questionnaire, language, star
         completionDurationSeconds = Math.round((endTime - startTime) / 1000);
     }
 
+    const metadata = {
+        completion_duration_seconds: completionDurationSeconds,
+        device_locale: navigator.language || 'unknown'
+    };
+
+    const dataQuality = assessDataQuality(answers, questionnaire, metadata);
+
     return {
         submission_id: submissionId,
         created_at: createdAt,
@@ -140,10 +148,8 @@ export function generateSubmissionPayload(answers, questionnaire, language, star
             practical_preference_band: getPracticalPreferenceBand(scores.practicalPreference || 50),
             constraint_flags: getConstraintFlags(answers)
         },
-        metadata: {
-            completion_duration_seconds: completionDurationSeconds,
-            device_locale: navigator.language || 'unknown'
-        }
+        data_quality: dataQuality,
+        metadata: metadata
     };
 }
 
@@ -236,7 +242,7 @@ export async function retryQueuedSubmissions() {
 
     for (const item of queue) {
         // Remove queue metadata before sending
-        const { queued_at, retry_count, ...payload } = item;
+        const { queued_at: _queued_at, retry_count: _retry_count, ...payload } = item;
 
         const result = await submitPayload(payload);
 

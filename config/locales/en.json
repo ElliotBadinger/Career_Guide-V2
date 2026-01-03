@@ -50,18 +50,36 @@
                 "over21": "Over 21"
             }
         },
-        "attendance": {
-            "label": "Do you go to school most days?",
+        "attentionCheck": {
+            "label": "Quick check: please select \"Sometimes\" for this item.",
+            "helper": "This helps us make sure the survey works well.",
             "options": {
-                "always": "Yes, almost every day",
-                "often": "Most days, but I miss some",
-                "sometimes": "Some days, but I miss a lot",
-                "rarely": "I do not go often",
+                "rarely": "Rarely",
+                "sometimes": "Sometimes",
+                "often": "Often"
+            }
+        },
+        "attendance": {
+            "label": "In the last month, how many days did you miss school?",
+            "labelHoliday": "During the last school term, how many days did you miss school in a typical month?",
+            "options": {
+                "always": "0 days missed in last month",
+                "often": "1-2 days missed in last month",
+                "sometimes": "3-5 days missed in last month",
+                "rarely": "More than 5 days missed",
+                "notInSchool": "I am not in school right now"
+            },
+            "optionsHoliday": {
+                "always": "0 days missed in a typical school month",
+                "often": "1-2 days missed in a typical school month",
+                "sometimes": "3-5 days missed in a typical school month",
+                "rarely": "More than 5 days missed in a typical school month",
                 "notInSchool": "I am not in school right now"
             }
         },
         "studyHabits": {
-            "label": "Do you study or do homework at home?",
+            "label": "In the last 7 days, how often did you study or do homework at home?",
+            "labelHoliday": "During the last school term, in a typical week, how often did you study or do homework at home?",
             "options": {
                 "daily": "Yes, every day",
                 "often": "A few times a week",
@@ -89,7 +107,8 @@
             }
         },
         "classParticipation": {
-            "label": "Do you ask or answer questions in class?",
+            "label": "In the last 7 days, how often did you ask or answer questions in class?",
+            "labelHoliday": "During the last school term, in a typical week, how often did you ask or answer questions in class?",
             "options": {
                 "often": "Yes, often",
                 "sometimes": "Sometimes",
@@ -163,6 +182,11 @@
                 "both": "I like both equally"
             }
         },
+        "learningExample": {
+            "label": "Give a quick example of how you learned something recently.",
+            "helper": "1-2 sentences is enough.",
+            "placeholder": "For example: I learned by watching my cousin fix a bike."
+        },
         "workEnvironment": {
             "label": "What kind of work place sounds good?",
             "options": {
@@ -189,12 +213,28 @@
                 "sports": "Sports or fitness"
             }
         },
+        "interestCertainty": {
+            "label": "How sure are you about these interests?",
+            "options": {
+                "high": "High - I feel sure",
+                "medium": "Medium - I am somewhat sure",
+                "low": "Low - I am not sure yet"
+            }
+        },
         "routineVsVariety": {
             "label": "What do you prefer?",
             "options": {
                 "routine": "The same routine every day",
                 "variety": "Each day being different",
                 "noPreference": "I do not mind either"
+            }
+        },
+        "workValuesForced": {
+            "label": "Which is more important to you?",
+            "intro": "This is a hard choice, but pick one.",
+            "options": {
+                "team": "Being part of a winning team",
+                "autonomy": "Being the expert who decides"
             }
         },
         "strengths": {
@@ -211,7 +251,7 @@
         },
         "strengthExample": {
             "label": "Can you give an example of when you used this strength?",
-            "helper": "Even a small example is fine.",
+            "helper": "1-2 sentences is enough.",
             "placeholder": "For example: I fixed my brother's phone..."
         },
         "valuesImportant": {
@@ -234,6 +274,19 @@
                 "improveMarks": "Get better marks",
                 "figureOut": "Figure out what I want to do"
             }
+        },
+        "goalCertainty": {
+            "label": "How sure are you about this goal?",
+            "options": {
+                "high": "High - I feel sure",
+                "medium": "Medium - I am somewhat sure",
+                "low": "Low - I am not sure yet"
+            }
+        },
+        "goalExample": {
+            "label": "Give a quick example of a step you could take toward this goal.",
+            "helper": "1-2 sentences is enough.",
+            "placeholder": "For example: I will ask a teacher about the requirements."
         },
         "transportAccess": {
             "label": "Is it easy to get to school or college?",
@@ -305,7 +358,7 @@
             }
         },
         "stressFrequency": {
-            "label": "How often do you feel stressed or worried?",
+            "label": "In the last 7 days, how often did you feel stressed or worried?",
             "options": {
                 "rarely": "Rarely",
                 "sometimes": "Sometimes",
@@ -314,7 +367,7 @@
             }
         },
         "sadnessFrequency": {
-            "label": "How often do you feel sad or down?",
+            "label": "In the last 7 days, how often did you feel sad or down?",
             "options": {
                 "rarely": "Rarely",
                 "sometimes": "Sometimes",

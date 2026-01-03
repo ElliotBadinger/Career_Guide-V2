@@ -1,5 +1,5 @@
 {
-    "version": "1.0.0",
+    "version": "1.2.1",
     "sections": [
         {
             "id": "consent",
@@ -56,6 +56,34 @@
                         }
                     ],
                     "scoringDimension": null
+                },
+                {
+                    "id": "attentionCheck",
+                    "type": "single",
+                    "required": false,
+                    "label": "i18n:questions.attentionCheck.label",
+                    "helper": "i18n:questions.attentionCheck.helper",
+                    "icon": "🧪",
+                    "attentionCheck": {
+                        "expected": "sometimes"
+                    },
+                    "options": [
+                        {
+                            "value": "rarely",
+                            "label": "i18n:questions.attentionCheck.options.rarely",
+                            "icon": "⏳"
+                        },
+                        {
+                            "value": "sometimes",
+                            "label": "i18n:questions.attentionCheck.options.sometimes",
+                            "icon": "✅"
+                        },
+                        {
+                            "value": "often",
+                            "label": "i18n:questions.attentionCheck.options.often",
+                            "icon": "⚡"
+                        }
+                    ]
                 }
             ]
         },
@@ -68,11 +96,13 @@
                     "type": "single",
                     "required": true,
                     "label": "i18n:questions.attendance.label",
+                    "labelHoliday": "i18n:questions.attendance.labelHoliday",
                     "icon": "🏫",
                     "options": [
                         {
                             "value": "always",
                             "label": "i18n:questions.attendance.options.always",
+                            "labelHoliday": "i18n:questions.attendance.optionsHoliday.always",
                             "icon": "✅",
                             "score": {
                                 "academicReadiness": 100
@@ -81,6 +111,7 @@
                         {
                             "value": "often",
                             "label": "i18n:questions.attendance.options.often",
+                            "labelHoliday": "i18n:questions.attendance.optionsHoliday.often",
                             "icon": "📅",
                             "score": {
                                 "academicReadiness": 75
@@ -89,6 +120,7 @@
                         {
                             "value": "sometimes",
                             "label": "i18n:questions.attendance.options.sometimes",
+                            "labelHoliday": "i18n:questions.attendance.optionsHoliday.sometimes",
                             "icon": "🔄",
                             "score": {
                                 "academicReadiness": 50
@@ -97,6 +129,7 @@
                         {
                             "value": "rarely",
                             "label": "i18n:questions.attendance.options.rarely",
+                            "labelHoliday": "i18n:questions.attendance.optionsHoliday.rarely",
                             "icon": "❌",
                             "score": {
                                 "academicReadiness": 25
@@ -105,6 +138,7 @@
                         {
                             "value": "notInSchool",
                             "label": "i18n:questions.attendance.options.notInSchool",
+                            "labelHoliday": "i18n:questions.attendance.optionsHoliday.notInSchool",
                             "icon": "🚫",
                             "score": {
                                 "academicReadiness": 0
@@ -117,6 +151,7 @@
                     "type": "single",
                     "required": true,
                     "label": "i18n:questions.studyHabits.label",
+                    "labelHoliday": "i18n:questions.studyHabits.labelHoliday",
                     "icon": "📚",
                     "options": [
                         {
@@ -254,6 +289,7 @@
                     "type": "single",
                     "required": true,
                     "label": "i18n:questions.classParticipation.label",
+                    "labelHoliday": "i18n:questions.classParticipation.labelHoliday",
                     "icon": "🙋",
                     "options": [
                         {
@@ -547,6 +583,15 @@
                             }
                         }
                     ]
+                },
+                {
+                    "id": "learningExample",
+                    "type": "textarea",
+                    "required": false,
+                    "label": "i18n:questions.learningExample.label",
+                    "helper": "i18n:questions.learningExample.helper",
+                    "placeholder": "i18n:questions.learningExample.placeholder",
+                    "icon": "✍️"
                 }
             ]
         },
@@ -668,6 +713,30 @@
                     ]
                 },
                 {
+                    "id": "interestCertainty",
+                    "type": "single",
+                    "required": true,
+                    "label": "i18n:questions.interestCertainty.label",
+                    "icon": "🤔",
+                    "options": [
+                        {
+                            "value": "high",
+                            "label": "i18n:questions.interestCertainty.options.high",
+                            "icon": "🟢"
+                        },
+                        {
+                            "value": "medium",
+                            "label": "i18n:questions.interestCertainty.options.medium",
+                            "icon": "🟡"
+                        },
+                        {
+                            "value": "low",
+                            "label": "i18n:questions.interestCertainty.options.low",
+                            "icon": "🔴"
+                        }
+                    ]
+                },
+                {
                     "id": "routineVsVariety",
                     "type": "single",
                     "required": true,
@@ -688,6 +757,26 @@
                             "value": "noPreference",
                             "label": "i18n:questions.routineVsVariety.options.noPreference",
                             "icon": "🤷"
+                        }
+                    ]
+                },
+                {
+                    "id": "workValuesForced",
+                    "type": "single",
+                    "required": true,
+                    "label": "i18n:questions.workValuesForced.label",
+                    "intro": "i18n:questions.workValuesForced.intro",
+                    "icon": "⚖️",
+                    "options": [
+                        {
+                            "value": "team",
+                            "label": "i18n:questions.workValuesForced.options.team",
+                            "icon": "👥"
+                        },
+                        {
+                            "value": "autonomy",
+                            "label": "i18n:questions.workValuesForced.options.autonomy",
+                            "icon": "👤"
                         }
                     ]
                 }
@@ -828,6 +917,39 @@
                             "icon": "🤔"
                         }
                     ]
+                },
+                {
+                    "id": "goalCertainty",
+                    "type": "single",
+                    "required": true,
+                    "label": "i18n:questions.goalCertainty.label",
+                    "icon": "🧭",
+                    "options": [
+                        {
+                            "value": "high",
+                            "label": "i18n:questions.goalCertainty.options.high",
+                            "icon": "🟢"
+                        },
+                        {
+                            "value": "medium",
+                            "label": "i18n:questions.goalCertainty.options.medium",
+                            "icon": "🟡"
+                        },
+                        {
+                            "value": "low",
+                            "label": "i18n:questions.goalCertainty.options.low",
+                            "icon": "🔴"
+                        }
+                    ]
+                },
+                {
+                    "id": "goalExample",
+                    "type": "textarea",
+                    "required": false,
+                    "label": "i18n:questions.goalExample.label",
+                    "helper": "i18n:questions.goalExample.helper",
+                    "placeholder": "i18n:questions.goalExample.placeholder",
+                    "icon": "✍️"
                 }
             ]
         },
@@ -1216,5 +1338,5 @@
             "supportNoteKey": "i18n:questions.wellbeingSupportNote"
         }
     ],
-    "totalQuestions": 27
+    "totalQuestions": 30
 }
