@@ -1,0 +1,217 @@
+{
+    "version": "1.0.0",
+    "dimensions": {
+        "academicReadiness": {
+            "name": "Academic Readiness",
+            "description": "Ability to succeed in traditional Grade 12 path",
+            "range": [
+                0,
+                100
+            ],
+            "weight": 1.0,
+            "contributingQuestions": [
+                "attendance",
+                "studyHabits",
+                "concentration",
+                "languageComfort",
+                "classParticipation",
+                "marksRange",
+                "repeatedGrade"
+            ]
+        },
+        "practicalPreference": {
+            "name": "Practical Preference",
+            "description": "Preference for hands-on vs textbook learning",
+            "range": [
+                0,
+                100
+            ],
+            "weight": 1.0,
+            "contributingQuestions": [
+                "learningStyle",
+                "practicalVsTheory",
+                "interestAreas",
+                "strengths",
+                "shortTermGoal"
+            ]
+        },
+        "supportNeed": {
+            "name": "Support Need Level",
+            "description": "Level of structure and support required",
+            "range": [
+                0,
+                100
+            ],
+            "weight": 1.0,
+            "contributingQuestions": [
+                "concentration",
+                "languageComfort",
+                "classParticipation",
+                "repeatedGrade",
+                "schoolBlockers",
+                "supportOpenness",
+                "structureNeed"
+            ]
+        },
+        "constraintLoad": {
+            "name": "Constraint Load",
+            "description": "External factors limiting options",
+            "range": [
+                0,
+                100
+            ],
+            "weight": 1.0,
+            "contributingQuestions": [
+                "schoolBlockers",
+                "transportAccess",
+                "financialSituation",
+                "homeResponsibilities",
+                "deviceAccess",
+                "safety"
+            ]
+        },
+        "wellbeingFlag": {
+            "name": "Wellbeing Flag",
+            "description": "Indicator for additional support guidance",
+            "range": [
+                0,
+                100
+            ],
+            "weight": 1.0,
+            "contributingQuestions": [
+                "stressFrequency",
+                "sadnessFrequency",
+                "safety"
+            ],
+            "flagThreshold": 50,
+            "isBinaryFlag": false
+        }
+    },
+    "aggregation": {
+        "method": "weightedAverage",
+        "normalizePerDimension": true
+    },
+    "recommendations": {
+        "thresholds": {
+            "A": {
+                "name": "Continue toward Grade 12",
+                "conditions": {
+                    "academicReadiness": {
+                        "min": 55
+                    },
+                    "constraintLoad": {
+                        "max": 50
+                    }
+                },
+                "priority": 1
+            },
+            "B": {
+                "name": "TVET / Skills Path",
+                "conditions": {
+                    "OR": [
+                        {
+                            "practicalPreference": {
+                                "min": 60
+                            }
+                        },
+                        {
+                            "academicReadiness": {
+                                "max": 40
+                            }
+                        }
+                    ]
+                },
+                "priority": 2
+            },
+            "C": {
+                "name": "Dual Approach",
+                "conditions": {
+                    "default": true
+                },
+                "priority": 3
+            }
+        },
+        "modifiers": [
+            {
+                "condition": {
+                    "supportNeed": {
+                        "min": 65
+                    }
+                },
+                "emphasis": "structured_support",
+                "message": "Look for programs with extra support and mentoring"
+            },
+            {
+                "condition": {
+                    "wellbeingFlag": {
+                        "min": 50
+                    }
+                },
+                "emphasis": "wellbeing_resources",
+                "message": "Consider speaking with a counsellor or trusted adult"
+            },
+            {
+                "condition": {
+                    "constraintLoad": {
+                        "min": 70
+                    }
+                },
+                "emphasis": "flexible_options",
+                "message": "Look for flexible or part-time study options"
+            }
+        ]
+    },
+    "drivers": {
+        "maxDrivers": 3,
+        "driverTemplates": {
+            "highAcademicReadiness": {
+                "condition": {
+                    "academicReadiness": {
+                        "min": 60
+                    }
+                },
+                "text": "i18n:report.drivers.highAcademicReadiness"
+            },
+            "lowAcademicReadiness": {
+                "condition": {
+                    "academicReadiness": {
+                        "max": 40
+                    }
+                },
+                "text": "i18n:report.drivers.lowAcademicReadiness"
+            },
+            "highPracticalPreference": {
+                "condition": {
+                    "practicalPreference": {
+                        "min": 65
+                    }
+                },
+                "text": "i18n:report.drivers.highPracticalPreference"
+            },
+            "highConstraints": {
+                "condition": {
+                    "constraintLoad": {
+                        "min": 60
+                    }
+                },
+                "text": "i18n:report.drivers.highConstraints"
+            },
+            "needsSupport": {
+                "condition": {
+                    "supportNeed": {
+                        "min": 60
+                    }
+                },
+                "text": "i18n:report.drivers.needsSupport"
+            },
+            "wellbeingConcern": {
+                "condition": {
+                    "wellbeingFlag": {
+                        "min": 50
+                    }
+                },
+                "text": "i18n:report.drivers.wellbeingConcern"
+            }
+        }
+    }
+}

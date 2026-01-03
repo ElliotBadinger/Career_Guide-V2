@@ -1,0 +1,62 @@
+{
+    "submission_id": "a1b2c3d4-e5f6-4789-abcd-ef0123456789",
+    "created_at": "2026-01-03T13:22:58+02:00",
+    "questionnaire_version": "1.0.0",
+    "language_used": "zu",
+    "answers": {
+        "name": "Thandi",
+        "age": "18",
+        "attendance": "sometimes",
+        "studyHabits": "sometimes",
+        "concentration": "sometimes",
+        "languageComfort": "manageable",
+        "classParticipation": "sometimes",
+        "marksRange": "50to70",
+        "repeatedGrade": "no",
+        "schoolBlockers": [
+            "understanding",
+            "noSupport"
+        ],
+        "learningStyle": "practical",
+        "practicalVsTheory": "practical",
+        "workEnvironment": "outdoors",
+        "interestAreas": [
+            "fixing",
+            "building"
+        ],
+        "routineVsVariety": "variety",
+        "strengths": [
+            "hands",
+            "solving"
+        ],
+        "valuesImportant": [
+            "stability",
+            "growth"
+        ],
+        "shortTermGoal": "learnSkill",
+        "transportAccess": "manageable",
+        "financialSituation": "tight",
+        "homeResponsibilities": "some",
+        "deviceAccess": "limited",
+        "safety": "mostly",
+        "supportOpenness": "yes",
+        "subjectChange": "maybe",
+        "structureNeed": "some",
+        "stressFrequency": "sometimes",
+        "sadnessFrequency": "rarely"
+    },
+    "free_text_fields": {
+        "strengthExample": "Ngalungisa ifoni yomfowethu"
+    },
+    "derived_fields": {
+        "attendance_band": "medium",
+        "practical_preference_band": "high",
+        "constraint_flags": [
+            "transport"
+        ]
+    },
+    "metadata": {
+        "completion_duration_seconds": 420,
+        "device_locale": "en-ZA"
+    }
+}

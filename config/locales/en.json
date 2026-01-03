@@ -1,0 +1,397 @@
+{
+    "meta": {
+        "language": "en",
+        "languageName": "English",
+        "direction": "ltr"
+    },
+    "app": {
+        "title": "My Path Finder",
+        "subtitle": "Find the right path for you",
+        "pill": "Pathway Check-in",
+        "translationDisclaimer": "Translations may not be perfect. Please tell us if something is unclear."
+    },
+    "nav": {
+        "next": "Next",
+        "back": "Back",
+        "start": "Start",
+        "finish": "Finish",
+        "resume": "Continue where you left off",
+        "startFresh": "Start fresh"
+    },
+    "progress": {
+        "step": "Step {current} of {total}",
+        "almostThere": "Almost there!",
+        "halfWay": "Halfway done!",
+        "goodStart": "Good start!"
+    },
+    "consent": {
+        "title": "Welcome!",
+        "intro": "This tool will help you think about your future. It asks questions about school, what you like, and what you need. At the end, you get ideas for your next steps.",
+        "privacy": "Your answers stay on your phone. We do not save them on a server.",
+        "question": "Do you agree to answer some questions?",
+        "agree": "Yes, I agree",
+        "disagree": "No, I do not want to"
+    },
+    "questions": {
+        "choosePlaceholder": "Choose one:",
+        "chooseMultiplePlaceholder": "Choose all that apply:",
+        "typePlaceholder": "Type your answer...",
+        "optional": "(optional)",
+        "name": {
+            "label": "What is your name?",
+            "helper": "You can use a nickname if you want."
+        },
+        "age": {
+            "label": "How old are you?",
+            "options": {
+                "under18": "Under 18",
+                "18": "18 years old",
+                "19to21": "19 to 21",
+                "over21": "Over 21"
+            }
+        },
+        "attendance": {
+            "label": "Do you go to school most days?",
+            "options": {
+                "always": "Yes, almost every day",
+                "often": "Most days, but I miss some",
+                "sometimes": "Some days, but I miss a lot",
+                "rarely": "I do not go often",
+                "notInSchool": "I am not in school right now"
+            }
+        },
+        "studyHabits": {
+            "label": "Do you study or do homework at home?",
+            "options": {
+                "daily": "Yes, every day",
+                "often": "A few times a week",
+                "sometimes": "Sometimes, when I need to",
+                "rarely": "Not really",
+                "never": "I do not study at home"
+            }
+        },
+        "concentration": {
+            "label": "Can you focus for a long time when you study?",
+            "options": {
+                "veryWell": "Yes, I can focus well",
+                "okay": "Most of the time",
+                "sometimes": "It is hard sometimes",
+                "difficult": "It is very hard for me"
+            }
+        },
+        "languageComfort": {
+            "label": "How do you feel about reading and writing in English?",
+            "options": {
+                "comfortable": "I feel okay with it",
+                "manageable": "It is a bit hard, but I manage",
+                "difficult": "It is quite hard for me",
+                "veryDifficult": "It is very hard for me"
+            }
+        },
+        "classParticipation": {
+            "label": "Do you ask or answer questions in class?",
+            "options": {
+                "often": "Yes, often",
+                "sometimes": "Sometimes",
+                "rarely": "Not really",
+                "never": "No, I am too shy or unsure"
+            }
+        },
+        "subjectConfidence": {
+            "label": "How do you feel about these subjects?",
+            "helper": "Select how confident you feel.",
+            "subjects": {
+                "maths": "Maths",
+                "english": "English",
+                "science": "Science",
+                "lifeskills": "Life Skills"
+            },
+            "options": {
+                "confident": "I feel good",
+                "okay": "It is okay",
+                "struggling": "I struggle",
+                "veryHard": "Very hard"
+            }
+        },
+        "marksRange": {
+            "label": "What marks do you usually get?",
+            "options": {
+                "above70": "Above 70% (doing well)",
+                "50to70": "50% to 70% (passing)",
+                "30to50": "30% to 50% (just passing or close)",
+                "below30": "Below 30% (struggling)",
+                "dontKnow": "I am not sure"
+            }
+        },
+        "repeatedGrade": {
+            "label": "Have you ever repeated a grade?",
+            "options": {
+                "no": "No",
+                "onceRecently": "Yes, once recently",
+                "onceBefore": "Yes, once a long time ago",
+                "moreThanOnce": "Yes, more than once"
+            }
+        },
+        "schoolBlockers": {
+            "label": "What makes school hard for you?",
+            "helper": "You can choose more than one.",
+            "options": {
+                "understanding": "I do not understand the work",
+                "language": "The language is hard",
+                "attendance": "I cannot always go to school",
+                "homeProblems": "Problems at home",
+                "health": "Health issues",
+                "noSupport": "I do not get help when I am stuck",
+                "noResources": "I do not have books or data",
+                "other": "Something else"
+            }
+        },
+        "learningStyle": {
+            "label": "How do you learn best?",
+            "options": {
+                "practical": "By doing things with my hands",
+                "watching": "By watching someone do it",
+                "reading": "By reading or listening",
+                "mixed": "A mix of everything"
+            }
+        },
+        "practicalVsTheory": {
+            "label": "Which sounds more like you?",
+            "options": {
+                "practical": "I like doing things, not just reading",
+                "theory": "I like learning from books and notes",
+                "both": "I like both equally"
+            }
+        },
+        "workEnvironment": {
+            "label": "What kind of work place sounds good?",
+            "options": {
+                "office": "An office, working on a computer",
+                "outdoors": "Outside, working with nature or machines",
+                "people": "With people, like in a shop or hospital",
+                "creative": "A creative place, like art or design",
+                "varied": "A place where every day is different"
+            }
+        },
+        "interestAreas": {
+            "label": "What do you like or find interesting?",
+            "helper": "Choose all that apply.",
+            "options": {
+                "fixing": "Fixing things (like cars, phones, machines)",
+                "computers": "Computers and technology",
+                "helping": "Helping people",
+                "business": "Business and selling things",
+                "cooking": "Cooking or making food",
+                "beauty": "Beauty and fashion",
+                "building": "Building or construction",
+                "farming": "Farming or animals",
+                "art": "Art, music, or design",
+                "sports": "Sports or fitness"
+            }
+        },
+        "routineVsVariety": {
+            "label": "What do you prefer?",
+            "options": {
+                "routine": "The same routine every day",
+                "variety": "Each day being different",
+                "noPreference": "I do not mind either"
+            }
+        },
+        "strengths": {
+            "label": "What are you good at?",
+            "helper": "Choose what fits you best.",
+            "options": {
+                "hands": "Working with my hands",
+                "people": "Talking to people",
+                "solving": "Solving problems",
+                "organizing": "Keeping things organized",
+                "creative": "Being creative",
+                "helping": "Helping others"
+            }
+        },
+        "strengthExample": {
+            "label": "Can you give an example of when you used this strength?",
+            "helper": "Even a small example is fine.",
+            "placeholder": "For example: I fixed my brother's phone..."
+        },
+        "valuesImportant": {
+            "label": "What is most important to you in a job?",
+            "helper": "Choose up to 2.",
+            "options": {
+                "money": "Making good money",
+                "stability": "Having a stable job",
+                "meaning": "Doing something that matters",
+                "independence": "Being my own boss",
+                "growth": "Learning and growing"
+            }
+        },
+        "shortTermGoal": {
+            "label": "What is your goal for the next year?",
+            "options": {
+                "finishSchool": "Finish school or get my matric",
+                "findWork": "Find a job or earn money",
+                "learnSkill": "Learn a new skill",
+                "improveMarks": "Get better marks",
+                "figureOut": "Figure out what I want to do"
+            }
+        },
+        "transportAccess": {
+            "label": "Is it easy to get to school or college?",
+            "options": {
+                "easy": "Yes, it is easy",
+                "manageable": "It takes time, but I can manage",
+                "difficult": "It is hard (far or expensive)",
+                "veryDifficult": "It is very hard to get there"
+            }
+        },
+        "financialSituation": {
+            "label": "How is money at home?",
+            "options": {
+                "okay": "We are okay",
+                "tight": "Money is tight, but we manage",
+                "difficult": "Money is a big problem",
+                "preferNot": "I prefer not to say"
+            }
+        },
+        "homeResponsibilities": {
+            "label": "Do you have duties at home that take time?",
+            "options": {
+                "no": "Not really",
+                "some": "Some duties, but I manage",
+                "many": "Yes, many duties",
+                "caring": "I look after someone (child, sick person)"
+            }
+        },
+        "deviceAccess": {
+            "label": "Do you have a phone or computer with data?",
+            "options": {
+                "yes": "Yes, I have access",
+                "limited": "Sometimes, not always",
+                "no": "No, I do not have access"
+            }
+        },
+        "safety": {
+            "label": "Do you feel safe where you live and travel?",
+            "options": {
+                "yes": "Yes, I feel safe",
+                "mostly": "Mostly, but not always",
+                "no": "No, I do not feel safe"
+            }
+        },
+        "supportOpenness": {
+            "label": "Would you be open to extra help?",
+            "helper": "Like tutoring, mentoring, or counselling.",
+            "options": {
+                "yes": "Yes, I would like help",
+                "maybe": "Maybe, if it is the right kind",
+                "no": "No, I prefer to do things on my own"
+            }
+        },
+        "subjectChange": {
+            "label": "Would you change subjects if it helped you pass?",
+            "options": {
+                "yes": "Yes, I would",
+                "maybe": "Maybe, if someone explained why",
+                "no": "No, I want to keep my subjects"
+            }
+        },
+        "structureNeed": {
+            "label": "How much structure do you need?",
+            "helper": "Structure means someone telling you what to do and when.",
+            "options": {
+                "more": "I work better with more structure",
+                "some": "Some structure is good",
+                "less": "I like to figure things out myself"
+            }
+        },
+        "stressFrequency": {
+            "label": "How often do you feel stressed or worried?",
+            "options": {
+                "rarely": "Rarely",
+                "sometimes": "Sometimes",
+                "often": "Often",
+                "always": "Almost always"
+            }
+        },
+        "sadnessFrequency": {
+            "label": "How often do you feel sad or down?",
+            "options": {
+                "rarely": "Rarely",
+                "sometimes": "Sometimes",
+                "often": "Often",
+                "always": "Almost always"
+            }
+        },
+        "wellbeingSupportNote": "It is normal to feel stressed or sad sometimes. If you feel this way a lot, talking to someone you trust can help. There are people who can support you."
+    },
+    "report": {
+        "title": "Your Path Report",
+        "greeting": "Hi {name}!",
+        "greetingNoName": "Hi there!",
+        "intro": "Based on your answers, here are some ideas for your next steps.",
+        "recommendation": "Our suggestion for you:",
+        "pathA": {
+            "title": "Continue toward Grade 12",
+            "description": "With the right support, you can work toward finishing your matric. This keeps more doors open for university or further study.",
+            "icon": "🎓"
+        },
+        "pathB": {
+            "title": "TVET College or Skills Training",
+            "description": "A hands-on path where you learn practical skills. TVET colleges offer courses in many fields. You can work while you learn.",
+            "icon": "🔧"
+        },
+        "pathC": {
+            "title": "Dual Approach",
+            "description": "Keep working on school while exploring other options like learnerships or part-time skills courses. This gives you flexibility.",
+            "icon": "🔀"
+        },
+        "whyThisPath": "Why we suggest this:",
+        "driver": "Because",
+        "risks": "Things to watch out for:",
+        "mitigations": "How to handle challenges:",
+        "actionChecklist": "Your 10-Day Action Plan",
+        "disclaimer": "This is guidance, not a final answer. Talk to a teacher, counsellor, or trusted adult about these ideas.",
+        "export": {
+            "title": "Save or Share Your Report",
+            "copy": "Copy to Clipboard",
+            "copied": "Copied!",
+            "downloadPdf": "Download PDF",
+            "downloadJson": "Download Answers",
+            "sendEmail": "Send by Email"
+        }
+    },
+    "email": {
+        "consentTitle": "Send Report by Email",
+        "consentText": "Do you want to send this report to someone?",
+        "recipientLabel": "Email address:",
+        "consentCheckbox": "I agree to send my report to this email address.",
+        "send": "Send Report",
+        "sending": "Sending...",
+        "sent": "Report sent!",
+        "error": "Could not send. Try downloading instead."
+    },
+    "errors": {
+        "configLoad": "Could not load the questionnaire. Please refresh the page.",
+        "required": "Please answer this question to continue."
+    },
+    "submission": {
+        "title": "Thank You",
+        "message": "Your answers have been submitted to the guardian for review.",
+        "pending": "Submitting...",
+        "success": "Submitted successfully!",
+        "failed": "Submission failed.",
+        "failedMessage": "Your submission could not be sent. Please check your internet connection and try again.",
+        "retry": "Retry",
+        "consent": "I agree to send my answers to the guardian for review.",
+        "consentRequired": "Please check the box above to submit.",
+        "confirmTitle": "Confirm Submission",
+        "readyTitle": "Ready to Submit",
+        "readyMessage": "You have answered all the questions. Your answers will be sent for review.",
+        "submit": "Submit Answers",
+        "backupTitle": "Save a Backup",
+        "backupDescription": "Download a copy of your answers for your records.",
+        "detailsTitle": "Submission Details",
+        "id": "Submission ID",
+        "pleaseWait": "Please wait..."
+    }
+}

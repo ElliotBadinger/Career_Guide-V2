@@ -1,0 +1,286 @@
+{
+    "version": "1.0.0",
+    "paths": {
+        "A": {
+            "id": "A",
+            "title": "i18n:report.pathA.title",
+            "description": "i18n:report.pathA.description",
+            "icon": "🎓",
+            "color": "#6366f1",
+            "details": {
+                "whatItMeans": "You continue at school and work toward your Grade 12 (Matric). With support like tutoring or extra classes, you can improve your marks and finish.",
+                "goodFor": "Students who want to keep options open for university or college. A Matric opens many doors.",
+                "consider": "You may need extra help with subjects you find hard. Ask about extra lessons or study groups."
+            },
+            "resources": [
+                {
+                    "name": "NSFAS",
+                    "description": "Free funding for further study",
+                    "url": "https://www.nsfas.org.za"
+                },
+                {
+                    "name": "FunDza",
+                    "description": "Free books and reading practice",
+                    "url": "https://www.fundza.co.za"
+                }
+            ]
+        },
+        "B": {
+            "id": "B",
+            "title": "i18n:report.pathB.title",
+            "description": "i18n:report.pathB.description",
+            "icon": "🔧",
+            "color": "#10b981",
+            "details": {
+                "whatItMeans": "You enrol at a TVET college or skills training programme. You learn by doing, not just reading. After 1-3 years, you get a certificate that employers value.",
+                "goodFor": "People who prefer hands-on work. Good for careers like electrician, hairdresser, IT technician, chef, or mechanic.",
+                "consider": "Find a TVET college near you. Check if they offer the course you want. NSFAS can pay for TVET too."
+            },
+            "resources": [
+                {
+                    "name": "TVET Colleges",
+                    "description": "Find your nearest college",
+                    "url": "https://www.tvetcolleges.co.za"
+                },
+                {
+                    "name": "NSFAS for TVET",
+                    "description": "Apply for free funding",
+                    "url": "https://www.nsfas.org.za"
+                },
+                {
+                    "name": "Harambee Youth",
+                    "description": "Job readiness and placement",
+                    "url": "https://www.harambee.co.za"
+                }
+            ]
+        },
+        "C": {
+            "id": "C",
+            "title": "i18n:report.pathC.title",
+            "description": "i18n:report.pathC.description",
+            "icon": "🔀",
+            "color": "#f59e0b",
+            "details": {
+                "whatItMeans": "You stay in school but also explore other options. Maybe you do a short course on weekends, or look into learnerships for after school.",
+                "goodFor": "People who are unsure which path to take. This gives you time to explore while keeping school as a backup.",
+                "consider": "Balance is important. Do not take on too much. Find one extra thing to try, not many."
+            },
+            "resources": [
+                {
+                    "name": "YES Programme",
+                    "description": "Youth employment programme",
+                    "url": "https://yes4youth.co.za"
+                },
+                {
+                    "name": "Learnerships",
+                    "description": "Work and study together",
+                    "url": "https://www.careerhelp.co.za/learnerships"
+                }
+            ]
+        }
+    },
+    "risks": {
+        "A": [
+            {
+                "risk": "Struggling with difficult subjects",
+                "mitigation": "Ask for tutoring or extra help. Join a study group."
+            },
+            {
+                "risk": "Feeling behind your peers",
+                "mitigation": "Focus on your own progress, not others. Every step forward counts."
+            }
+        ],
+        "B": [
+            {
+                "risk": "College is far from home",
+                "mitigation": "Check if there are closer options. Some colleges have hostels."
+            },
+            {
+                "risk": "Not sure if the course is right",
+                "mitigation": "Visit the college first. Talk to current students if you can."
+            }
+        ],
+        "C": [
+            {
+                "risk": "Feeling overwhelmed by too many things",
+                "mitigation": "Start with one extra activity. You can add more later."
+            },
+            {
+                "risk": "Not finishing anything",
+                "mitigation": "Set a goal for the year. Focus on completing one thing well."
+            }
+        ]
+    },
+    "actionChecklists": {
+        "A": [
+            {
+                "day": 1,
+                "action": "Talk to a teacher you trust about getting extra help"
+            },
+            {
+                "day": 2,
+                "action": "Make a list of subjects you find hard"
+            },
+            {
+                "day": 3,
+                "action": "Ask about tutoring or study groups at school"
+            },
+            {
+                "day": 4,
+                "action": "Set up a quiet place at home to study"
+            },
+            {
+                "day": 5,
+                "action": "Create a simple study schedule for the week"
+            },
+            {
+                "day": 6,
+                "action": "Find one online resource to help with a hard subject"
+            },
+            {
+                "day": 7,
+                "action": "Talk to family about your goals and what support you need"
+            },
+            {
+                "day": 8,
+                "action": "Start studying for 30 minutes every day"
+            },
+            {
+                "day": 9,
+                "action": "Review: Are you going to school more? How does it feel?"
+            },
+            {
+                "day": 10,
+                "action": "Write down one thing you are proud of this week"
+            }
+        ],
+        "B": [
+            {
+                "day": 1,
+                "action": "Search for TVET colleges near you"
+            },
+            {
+                "day": 2,
+                "action": "Pick 2-3 courses that interest you"
+            },
+            {
+                "day": 3,
+                "action": "Check the application dates and requirements"
+            },
+            {
+                "day": 4,
+                "action": "Ask someone who works in a field you like about their job"
+            },
+            {
+                "day": 5,
+                "action": "Visit NSFAS website and learn how to apply"
+            },
+            {
+                "day": 6,
+                "action": "Gather your documents (ID, school reports)"
+            },
+            {
+                "day": 7,
+                "action": "Talk to family about TVET as an option"
+            },
+            {
+                "day": 8,
+                "action": "If possible, visit a college or call them"
+            },
+            {
+                "day": 9,
+                "action": "Start working on your application"
+            },
+            {
+                "day": 10,
+                "action": "Write down 3 things you hope to learn or do"
+            }
+        ],
+        "C": [
+            {
+                "day": 1,
+                "action": "List what you are curious about (jobs, skills, courses)"
+            },
+            {
+                "day": 2,
+                "action": "Search for free online courses or short programmes"
+            },
+            {
+                "day": 3,
+                "action": "Talk to a teacher about your options after school"
+            },
+            {
+                "day": 4,
+                "action": "Look up learnerships in fields you like"
+            },
+            {
+                "day": 5,
+                "action": "Create a simple weekly plan: school + exploration time"
+            },
+            {
+                "day": 6,
+                "action": "Ask someone with a job you admire about how they started"
+            },
+            {
+                "day": 7,
+                "action": "Pick one small skill to start learning (online or in person)"
+            },
+            {
+                "day": 8,
+                "action": "Check if your school offers any extra activities or clubs"
+            },
+            {
+                "day": 9,
+                "action": "Review: What did you learn about yourself this week?"
+            },
+            {
+                "day": 10,
+                "action": "Write down your top 2 options to explore more"
+            }
+        ]
+    },
+    "driverMessages": {
+        "highAcademicReadiness": {
+            "en": "Your school habits show you can handle the Grade 12 path",
+            "zu": "Imikhuba yakho yesikole ibonisa ukuthi ungakwazi ukubhekana nendlela yeBanga 12"
+        },
+        "lowAcademicReadiness": {
+            "en": "School has been hard, and a different path might suit you better",
+            "zu": "Isikole besinzima, futhi enye indlela ingaba ngcono kuwe"
+        },
+        "highPracticalPreference": {
+            "en": "You prefer learning by doing, not just from books",
+            "zu": "Uthanda ukufunda ngokwenza, hhayi emabhukwini kuphela"
+        },
+        "highConstraints": {
+            "en": "You have challenges like transport or money that affect your choices",
+            "zu": "Unezinselelo ezinjengokuthutha noma imali ezithinta izinketho zakho"
+        },
+        "needsSupport": {
+            "en": "You would benefit from extra help and structure",
+            "zu": "Ungasizakala ngosizo olwengeziwe nesakhiwo"
+        },
+        "wellbeingConcern": {
+            "en": "You mentioned feeling stressed or sad often, and talking to someone could help",
+            "zu": "Usho ukuzizwa ucindezelekile noma udangele kaningi, futhi ukukhuluma nomuntu kungasiza"
+        }
+    },
+    "wellbeingResources": [
+        {
+            "name": "Childline SA",
+            "description": "Free counselling for young people",
+            "phone": "0800 055 555",
+            "url": "https://www.childlinesa.org.za"
+        },
+        {
+            "name": "SADAG",
+            "description": "Depression and anxiety support",
+            "phone": "0800 567 567",
+            "url": "https://www.sadag.org"
+        }
+    ],
+    "disclaimer": {
+        "en": "This is guidance based on your answers. It is not a final decision or diagnosis. Talk to a teacher, counsellor, parent, or trusted adult about these ideas. They can help you think through your options.",
+        "zu": "Lesi siqondiso ngokususela ezimpendulweni zakho. Akuyona isinqumo sokugcina noma isimo. Khuluma nothisha, umeluleki, umzali, noma umuntu omdala omethembayo ngalezi mibono. Bangakusiza ucabange ngezinketho zakho."
+    }
+}

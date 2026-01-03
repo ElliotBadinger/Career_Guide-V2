@@ -1,0 +1,871 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Lexend:wght@300;400;500;600&display=swap');
+@import "tailwindcss";
+
+/* ═══════════════════════════════════════════════════════════════
+   V1-style Premium Design System
+   ═══════════════════════════════════════════════════════════════ */
+
+:root {
+  color-scheme: light;
+
+  /* V1's warm, earthy palette */
+  --ink: #1e1b16;
+  --sand: #f6f1e6;
+  --sun: #f3c26b;
+  --teal: #1f7a6c;
+  --clay: #c46a4f;
+  --sky: #d7ecf0;
+
+  /* Extended palette */
+  --emerald: #10b981;
+  --emerald-dark: #059669;
+  --amber: #f59e0b;
+
+  /* Semantic colors */
+  --color-primary: var(--teal);
+  --color-primary-light: #2a9d8f;
+  --color-success: var(--emerald);
+  --color-warning: var(--sun);
+  --color-bg: var(--sand);
+  --color-text: var(--ink);
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   Base Styles
+   ═══════════════════════════════════════════════════════════════ */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  font-family: 'Lexend', ui-sans-serif, system-ui, sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  color: var(--ink);
+  min-height: 100vh;
+  min-height: 100dvh;
+
+  /* V1's sophisticated multi-layer gradient background */
+  background:
+    radial-gradient(1200px 600px at 10% -10%, rgba(243, 194, 107, 0.35), transparent 60%),
+    radial-gradient(1000px 800px at 110% 10%, rgba(31, 122, 108, 0.18), transparent 60%),
+    linear-gradient(180deg, #f6f1e6 0%, #f2e6d4 100%);
+  background-attachment: fixed;
+}
+
+::selection {
+  background: rgba(31, 122, 108, 0.2);
+}
+
+/* Display font for headings */
+.font-display {
+  font-family: 'Fraunces', ui-serif, Georgia, serif;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   App Container with Decorative Orbs
+   ═══════════════════════════════════════════════════════════════ */
+
+.app-container {
+  position: relative;
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem;
+  isolation: isolate;
+  overflow: hidden;
+}
+
+/* Decorative gradient orbs (V1 style) */
+.app-container::before,
+.app-container::after {
+  content: '';
+  position: fixed;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.app-container::before {
+  top: -8rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 18rem;
+  height: 18rem;
+  background: rgba(243, 194, 107, 0.4);
+  filter: blur(60px);
+}
+
+.app-container::after {
+  top: 5rem;
+  right: -2rem;
+  width: 10rem;
+  height: 10rem;
+  background: rgba(31, 122, 108, 0.3);
+  filter: blur(60px);
+}
+
+/* Third orb via extra element */
+.orb-bottom {
+  position: fixed;
+  bottom: 2rem;
+  left: -2rem;
+  width: 10rem;
+  height: 10rem;
+  background: rgba(196, 106, 79, 0.3);
+  border-radius: 50%;
+  filter: blur(60px);
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   Glassmorphism Card (V1 signature style)
+   ═══════════════════════════════════════════════════════════════ */
+
+.card,
+.glass-card {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 1rem;
+  padding: 1.5rem 1.25rem;
+  box-shadow: 0 20px 60px rgba(30, 27, 22, 0.12);
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   Pill Badge (V1 style)
+   ═══════════════════════════════════════════════════════════════ */
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 9999px;
+  background: rgba(31, 122, 108, 0.9);
+  color: #fef3c7;
+  padding: 0.375rem 0.875rem;
+  font-size: 0.7rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   Touch-Friendly Buttons
+   ═══════════════════════════════════════════════════════════════ */
+
+button,
+.btn,
+input[type="radio"]+label,
+input[type="checkbox"]+label {
+  min-height: 48px;
+  min-width: 48px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.875rem 1.5rem;
+  font-family: 'Lexend', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: 0.75rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background: var(--teal);
+  color: white;
+  box-shadow: 0 4px 14px rgba(31, 122, 108, 0.25);
+}
+
+.btn-primary:hover {
+  background: #186860;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(31, 122, 108, 0.35);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+}
+
+.btn-primary:disabled {
+  background: #94a3b8;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--teal);
+  border: 2px solid var(--teal);
+}
+
+.btn-secondary:hover {
+  background: var(--teal);
+  color: white;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   Progress Bar
+   ═══════════════════════════════════════════════════════════════ */
+
+.progress-bar {
+  height: 8px;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background: var(--teal);
+  transition: width 0.3s ease;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   Option Buttons (Questionnaire)
+   ═══════════════════════════════════════════════════════════════ */
+
+.option-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  width: 100%;
+  padding: 1rem 1.25rem;
+  margin-bottom: 0.625rem;
+  background: rgba(255, 255, 255, 0.9);
+  border: 2px solid #e2e8f0;
+  border-radius: 0.75rem;
+  font-family: 'Lexend', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--ink);
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.option-btn:hover {
+  border-color: var(--teal);
+  background: rgba(255, 255, 255, 1);
+}
+
+.option-btn.selected {
+  border-color: var(--teal);
+  background: rgba(31, 122, 108, 0.08);
+  box-shadow: 0 0 0 3px rgba(31, 122, 108, 0.15);
+}
+
+.option-btn .icon {
+  font-size: 1.375rem;
+  flex-shrink: 0;
+}
+
+.option-btn.disabled,
+.option-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   Language Toggle
+   ═══════════════════════════════════════════════════════════════ */
+
+.lang-toggle {
+  display: flex;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 0.5rem;
+  padding: 0.25rem;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+.lang-toggle button {
+  flex: 1;
+  padding: 0.5rem 0.875rem;
+  border: none;
+  border-radius: 0.375rem;
+  background: transparent;
+  font-family: 'Lexend', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #64748b;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.lang-toggle button.active {
+  background: white;
+  color: var(--teal);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   Wellbeing Notice
+   ═══════════════════════════════════════════════════════════════ */
+
+.wellbeing-notice {
+  background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+  border-left: 4px solid var(--sun);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin: 1rem 0;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   Score Cards (Report)
+   ═══════════════════════════════════════════════════════════════ */
+
+.score-card {
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 1rem;
+  padding: 0.875rem 1rem;
+  box-shadow: 0 2px 8px rgba(30, 27, 22, 0.06);
+}
+
+.score-card-label {
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #64748b;
+}
+
+.score-card-value {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--ink);
+  margin-top: 0.375rem;
+}
+
+.score-card-bar {
+  height: 6px;
+  background: #e2e8f0;
+  border-radius: 3px;
+  margin-top: 0.5rem;
+  overflow: hidden;
+}
+
+.score-card-bar-fill {
+  height: 100%;
+  background: var(--teal);
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   Text Inputs
+   ═══════════════════════════════════════════════════════════════ */
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 0.875rem 1rem;
+  font-family: 'Lexend', sans-serif;
+  font-size: 1rem;
+  color: var(--ink);
+  background: rgba(255, 255, 255, 0.9);
+  border: 2px solid #e2e8f0;
+  border-radius: 0.75rem;
+  transition: all 0.2s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--teal);
+  box-shadow: 0 0 0 3px rgba(31, 122, 108, 0.15);
+}
+
+textarea {
+  min-height: 120px;
+  resize: none;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   Animations
+   ═══════════════════════════════════════════════════════════════ */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.3s ease forwards;
+}
+
+/* Subtle hover lift for cards */
+.card:hover,
+.glass-card:hover {
+  box-shadow: 0 24px 70px rgba(30, 27, 22, 0.15);
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   Typography Utilities
+   ═══════════════════════════════════════════════════════════════ */
+
+.text-xs {
+  font-size: 0.75rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+}
+
+.text-base {
+  font-size: 1rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+}
+
+.font-light {
+  font-weight: 300;
+}
+
+.font-normal {
+  font-weight: 400;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.tracking-wide {
+  letter-spacing: 0.025em;
+}
+
+.tracking-wider {
+  letter-spacing: 0.1em;
+}
+
+.tracking-widest {
+  letter-spacing: 0.18em;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   Spacing Utilities
+   ═══════════════════════════════════════════════════════════════ */
+
+.space-y-2>*+* {
+  margin-top: 0.5rem;
+}
+
+.space-y-3>*+* {
+  margin-top: 0.75rem;
+}
+
+.space-y-4>*+* {
+  margin-top: 1rem;
+}
+
+.space-y-6>*+* {
+  margin-top: 1.5rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.mb-3 {
+  margin-bottom: 0.75rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
+.mt-3 {
+  margin-top: 0.75rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.mt-6 {
+  margin-top: 1.5rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
+}
+
+.p-3 {
+  padding: 0.75rem;
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.gap-3 {
+  gap: 0.75rem;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   Layout Utilities
+   ═══════════════════════════════════════════════════════════════ */
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.flex-shrink-0 {
+  flex-shrink: 0;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.items-start {
+  align-items: flex-start;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.w-full {
+  width: 100%;
+}
+
+.w-5 {
+  width: 1.25rem;
+}
+
+.h-5 {
+  height: 1.25rem;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   Color Utilities
+   ═══════════════════════════════════════════════════════════════ */
+
+.text-gray-500 {
+  color: #64748b;
+}
+
+.text-gray-600 {
+  color: #475569;
+}
+
+.text-gray-700 {
+  color: #334155;
+}
+
+.text-gray-800 {
+  color: #1e293b;
+}
+
+.text-teal {
+  color: var(--teal);
+}
+
+.text-amber-800 {
+  color: #92400e;
+}
+
+.text-blue-600 {
+  color: #2563eb;
+}
+
+.text-blue-800 {
+  color: #1e40af;
+}
+
+.text-green-500 {
+  color: #22c55e;
+}
+
+.text-green-600 {
+  color: #16a34a;
+}
+
+.text-red-500 {
+  color: #ef4444;
+}
+
+.text-white {
+  color: white;
+}
+
+.bg-white {
+  background: white;
+}
+
+.bg-gray-50 {
+  background: #f8fafc;
+}
+
+.bg-gray-100 {
+  background: #f1f5f9;
+}
+
+.bg-blue-50 {
+  background: #eff6ff;
+}
+
+.bg-green-500 {
+  background: #22c55e;
+}
+
+.bg-teal {
+  background: var(--teal);
+}
+
+.bg-indigo-100 {
+  background: rgba(99, 102, 241, 0.1);
+}
+
+.bg-indigo-500 {
+  background: #6366f1;
+}
+
+.bg-amber-50 {
+  background: #fffbeb;
+}
+
+.border {
+  border-width: 1px;
+}
+
+.border-2 {
+  border-width: 2px;
+}
+
+.border-gray-200 {
+  border-color: #e2e8f0;
+}
+
+.border-gray-300 {
+  border-color: #cbd5e1;
+}
+
+.border-teal {
+  border-color: var(--teal);
+}
+
+.border-blue-400 {
+  border-color: #60a5fa;
+}
+
+.border-amber-200 {
+  border-color: #fcd34d;
+}
+
+.rounded {
+  border-radius: 0.25rem;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
+.rounded-xl {
+  border-radius: 0.75rem;
+}
+
+.rounded-2xl {
+  border-radius: 1rem;
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
+
+.border-l-4 {
+  border-left-width: 4px;
+}
+
+.opacity-50 {
+  opacity: 0.5;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   Fixed Positioning
+   ═══════════════════════════════════════════════════════════════ */
+
+.fixed {
+  position: fixed;
+}
+
+.inset-0 {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.bottom-4 {
+  bottom: 1rem;
+}
+
+.left-1\/2 {
+  left: 50%;
+}
+
+.transform {
+  transform: translateX(-50%);
+}
+
+.-translate-x-1\/2 {
+  transform: translateX(-50%);
+}
+
+.z-50 {
+  z-index: 50;
+}
+
+.bg-black {
+  background: black;
+}
+
+.bg-opacity-50 {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   Responsive
+   ═══════════════════════════════════════════════════════════════ */
+
+@media (min-width: 640px) {
+  .sm\:grid-cols-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   Accessibility
+   ═══════════════════════════════════════════════════════════════ */
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Focus visible for keyboard navigation */
+:focus-visible {
+  outline: 2px solid var(--teal);
+  outline-offset: 2px;
+}

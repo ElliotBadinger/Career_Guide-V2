@@ -1,0 +1,397 @@
+{
+    "meta": {
+        "language": "zu",
+        "languageName": "isiZulu",
+        "direction": "ltr"
+    },
+    "app": {
+        "title": "Umhlahlandlela Wekusasa",
+        "subtitle": "Thola indlela efanele wena",
+        "pill": "Ukuhlola Indlela",
+        "translationDisclaimer": "Lokhu kuhunyushwe wumshini, kungase kube namaphutha. Sicela usitshele uma kukhona okungacacile."
+    },
+    "nav": {
+        "next": "Okulandelayo",
+        "back": "Emuva",
+        "start": "Qala",
+        "finish": "Qeda",
+        "resume": "Qhubeka lapho ugcine khona",
+        "startFresh": "Qala phansi"
+    },
+    "progress": {
+        "step": "Isinyathelo {current} kwezingu-{total}",
+        "almostThere": "Usucishe ufike!",
+        "halfWay": "Uphakathi nendawo!",
+        "goodStart": "Ukuqala okuhle!"
+    },
+    "consent": {
+        "title": "Siyakwamukela!",
+        "intro": "Leli thuluzi lizokusiza ucabange ngekusasa lakho. Ibuza imibuzo ngesikoleni, ngalokho okuthandayo, nangalokho okudingayo. Ekugcineni, uthola imibono ngezinyathelo ezizayo zakho.",
+        "privacy": "Izimpendulo zakho zihlala efonini yakho. Asizigcini ku-server.",
+        "question": "Uyavuma ukuphendula imibuzo?",
+        "agree": "Yebo, ngiyavuma",
+        "disagree": "Cha, angifuni"
+    },
+    "questions": {
+        "choosePlaceholder": "Khetha okukodwa:",
+        "chooseMultiplePlaceholder": "Khetha konke okusebenzayo:",
+        "typePlaceholder": "Bhala impendulo yakho...",
+        "optional": "(akuphoqelekile)",
+        "name": {
+            "label": "Ubani igama lakho?",
+            "helper": "Ungasebenzisa igama lokudlala uma uthanda."
+        },
+        "age": {
+            "label": "Uneminyaka emingaki?",
+            "options": {
+                "under18": "Ngaphansi kwe-18",
+                "18": "Iminyaka engu-18",
+                "19to21": "19 kuya ku-21",
+                "over21": "Ngaphezu kuka-21"
+            }
+        },
+        "attendance": {
+            "label": "Ingabe uya esikoleni izinsuku eziningi?",
+            "options": {
+                "always": "Yebo, cishe nsuku zonke",
+                "often": "Izinsuku eziningi, kodwa ngiyaphuthelwa ezinye",
+                "sometimes": "Ezinye izinsuku, kodwa ngiphuthelwa eziningi",
+                "rarely": "Ngiyaphutha kakhulu esikoleni",
+                "notInSchool": "Angikho esikoleni njengamanje"
+            }
+        },
+        "studyHabits": {
+            "label": "Ingabe uyafunda noma wenze umsebenzi wasekhaya ekhaya?",
+            "options": {
+                "daily": "Yebo, nsuku zonke",
+                "often": "Izikhathi ezimbalwa ngesonto",
+                "sometimes": "Ngezinye izikhathi, uma kudingeka",
+                "rarely": "Hhayi ngempela",
+                "never": "Angifundi ekhaya"
+            }
+        },
+        "concentration": {
+            "label": "Ungagxila isikhathi eside uma ufunda?",
+            "options": {
+                "veryWell": "Yebo, ngiyakwazi ukugxila kahle",
+                "okay": "Isikhathi esiningi",
+                "sometimes": "Kunzima ngezinye izikhathi",
+                "difficult": "Kunzima kakhulu kimi"
+            }
+        },
+        "languageComfort": {
+            "label": "Uzizwa kanjani ngokufunda nokubhala ngesiNgisi?",
+            "options": {
+                "comfortable": "Ngizizwa kulungile",
+                "manageable": "Kunzima kancane, kodwa ngiyazama",
+                "difficult": "Kunzima kakhulu kimi",
+                "veryDifficult": "Kunzima kakhulu impela"
+            }
+        },
+        "classParticipation": {
+            "label": "Ingabe uyabuza noma uphendule imibuzo ekilasini?",
+            "options": {
+                "often": "Yebo, kaningi",
+                "sometimes": "Ngezinye izikhathi",
+                "rarely": "Hhayi ngempela",
+                "never": "Cha, nginamahloni noma angiqinisekile"
+            }
+        },
+        "subjectConfidence": {
+            "label": "Uzizwa kanjani ngalezi zifundo?",
+            "helper": "Khetha ukuthi uzethemba kangakanani.",
+            "subjects": {
+                "maths": "Izibalo",
+                "english": "IsiNgisi",
+                "science": "ISayensi",
+                "lifeskills": "Amakhono Okuphila"
+            },
+            "options": {
+                "confident": "Ngizizwa kahle",
+                "okay": "Kulungile",
+                "struggling": "Ngiyasokola",
+                "veryHard": "Kunzima kakhulu"
+            }
+        },
+        "marksRange": {
+            "label": "Uvamise ukuthola amamaki amangaki?",
+            "options": {
+                "above70": "Ngaphezu kuka-70% (wenza kahle)",
+                "50to70": "50% kuya ku-70% (uyaphumelela)",
+                "30to50": "30% kuya ku-50% (uphumelela kancane)",
+                "below30": "Ngaphansi kuka-30% (kunzima kakhulu)",
+                "dontKnow": "Angiqinisekile"
+            }
+        },
+        "repeatedGrade": {
+            "label": "Wake waphinda ibanga?",
+            "options": {
+                "no": "Cha",
+                "onceRecently": "Yebo, kanye muva nje",
+                "onceBefore": "Yebo, kanye kudala",
+                "moreThanOnce": "Yebo, ngaphezu kwesinye isikhathi"
+            }
+        },
+        "schoolBlockers": {
+            "label": "Yini ekwenza isikole sibe nzima?",
+            "helper": "Ungakhetha okungaphezu kokukodwa.",
+            "options": {
+                "understanding": "Angiwuqondi umsebenzi",
+                "language": "Ulimi lunzima",
+                "attendance": "Angikwazi ukuya esikoleni njalo",
+                "homeProblems": "Izinkinga ekhaya",
+                "health": "Izinkinga zempilo",
+                "noSupport": "Angitholi usizo uma ngibhajekile",
+                "noResources": "Angina zincwadi noma idatha",
+                "other": "Okunye"
+            }
+        },
+        "learningStyle": {
+            "label": "Ufunda kanjani kangcono?",
+            "options": {
+                "practical": "Ngokwenza izinto ngezandla zami",
+                "watching": "Ngokubuka othile ekwenza",
+                "reading": "Ngokufunda noma ukulalela",
+                "mixed": "Inhlanganisela yakho konke"
+            }
+        },
+        "practicalVsTheory": {
+            "label": "Yikuphi okufana nawe?",
+            "options": {
+                "practical": "Ngithanda ukwenza izinto, hhayi ukufunda nje",
+                "theory": "Ngithanda ukufunda emabhukwini nasemabhukwini",
+                "both": "Ngithanda kokubili ngokulinganayo"
+            }
+        },
+        "workEnvironment": {
+            "label": "Hlobo luni lwendawo yokusebenza oluzwakala kahle?",
+            "options": {
+                "office": "Ihhovisi, ukusebenza kukhompyutha",
+                "outdoors": "Ngaphandle, ukusebenza nemvelo noma imishini",
+                "people": "Nabantu, njengasesitolo noma isibhedlela",
+                "creative": "Indawo yokudala, njenge-art noma ukudizayina",
+                "varied": "Indawo lapho usuku ngalunye luhlukile"
+            }
+        },
+        "interestAreas": {
+            "label": "Uthanda noma uthola ini ithakazelisa?",
+            "helper": "Khetha konke okusebenzayo.",
+            "options": {
+                "fixing": "Ukulungisa izinto (njengezimoto, amaselula, imishini)",
+                "computers": "Amakhompyutha nobuchwepheshe",
+                "helping": "Ukusiza abantu",
+                "business": "Ibhizinisi nokuthengisa izinto",
+                "cooking": "Ukupheka noma ukwenza ukudla",
+                "beauty": "Ubuhle nemfashini",
+                "building": "Ukwakha noma ukwakhiwa",
+                "farming": "Ukulima noma izilwane",
+                "art": "Ubuciko, umculo, noma ukudizayina",
+                "sports": "Ezemidlalo noma i-fitness"
+            }
+        },
+        "routineVsVariety": {
+            "label": "Ukhetha ini?",
+            "options": {
+                "routine": "Inqubo efanayo nsuku zonke",
+                "variety": "Usuku ngalunye luhlukile",
+                "noPreference": "Akunandaba kimi"
+            }
+        },
+        "strengths": {
+            "label": "Yini oyenza kahle?",
+            "helper": "Khetha lokho okukukufanele.",
+            "options": {
+                "hands": "Ukusebenza ngezandla zami",
+                "people": "Ukukhuluma nabantu",
+                "solving": "Ukuxazulula izinkinga",
+                "organizing": "Ukugcina izinto zihlelekile",
+                "creative": "Ukuba nokudalela",
+                "helping": "Ukusiza abanye"
+            }
+        },
+        "strengthExample": {
+            "label": "Ungasinikeza isibonelo sokuthi wasebenzisa nini lamandla?",
+            "helper": "Ngisho nesibonelo esincane kulungile.",
+            "placeholder": "Isibonelo: Ngalungisa ifoni yomfowethu..."
+        },
+        "valuesImportant": {
+            "label": "Yini ebaluleke kakhulu kuwe emsebenzini?",
+            "helper": "Khetha kuze kube ngu-2.",
+            "options": {
+                "money": "Ukwenza imali enhle",
+                "stability": "Ukuba nomsebenzi oqinile",
+                "meaning": "Ukwenza into ebalulekile",
+                "independence": "Ukuba ngumphathi wami",
+                "growth": "Ukufunda nokukhula"
+            }
+        },
+        "shortTermGoal": {
+            "label": "Iyini injongo yakho yonyaka ozayo?",
+            "options": {
+                "finishSchool": "Ukuqeda isikole noma ukuthola imatriki yami",
+                "findWork": "Ukuthola umsebenzi noma ukuzuza imali",
+                "learnSkill": "Ukufunda ikhono elisha",
+                "improveMarks": "Ukuthola amamaki angcono",
+                "figureOut": "Ukuthola ukuthi ngifuna ukwenzani"
+            }
+        },
+        "transportAccess": {
+            "label": "Kulula ukufika esikoleni noma ekolishi?",
+            "options": {
+                "easy": "Yebo, kulula",
+                "manageable": "Kuthatha isikhathi, kodwa ngiyakwazi",
+                "difficult": "Kunzima (kude noma kubiza)",
+                "veryDifficult": "Kunzima kakhulu ukufika lapho"
+            }
+        },
+        "financialSituation": {
+            "label": "Injani imali ekhaya?",
+            "options": {
+                "okay": "Silungile",
+                "tight": "Imali incane, kodwa siyazama",
+                "difficult": "Kubalulekile ukonga imali ekhaya",
+                "preferNot": "Ngincamela ukungasho"
+            }
+        },
+        "homeResponsibilities": {
+            "label": "Unayo yini imisebenzi ekhaya ethatha isikhathi?",
+            "options": {
+                "no": "Hhayi ngempela",
+                "some": "Eminye imisebenzi, kodwa ngiyazama",
+                "many": "Yebo, imisebenzi minginingi",
+                "caring": "Ngibheka othile (ingane, ogulayo)"
+            }
+        },
+        "deviceAccess": {
+            "label": "Unayo ifoni noma ikhompyutha enedatha?",
+            "options": {
+                "yes": "Yebo, nginokufinyelela",
+                "limited": "Ngezinye izikhathi, hhayi njalo",
+                "no": "Cha, anginakho ukufinyelela"
+            }
+        },
+        "safety": {
+            "label": "Uzizwa uphephile lapho uhlala khona nohamba?",
+            "options": {
+                "yes": "Yebo, ngizizwa ngiphephile",
+                "mostly": "Ikakhulukazi, kodwa hhayi njalo",
+                "no": "Cha, angizizwa ngiphephile"
+            }
+        },
+        "supportOpenness": {
+            "label": "Ungavumelana nosizo olwengeziwe?",
+            "helper": "Njengokuqeqeshwa, ukwelulekwa, noma ukwelulekwa.",
+            "options": {
+                "yes": "Yebo, ngingathanda usizo",
+                "maybe": "Mhlawumbe, uma kuwuhlobo olufanele",
+                "no": "Cha, ngincamela ukwenza izinto ngokwami"
+            }
+        },
+        "subjectChange": {
+            "label": "Ungashintsha izifundo uma kukusiza ukuphumelela?",
+            "options": {
+                "yes": "Yebo, ngingakwenza",
+                "maybe": "Mhlawumbe, uma othile ecacisa ukuthi kungani",
+                "no": "Cha, ngifuna ukugcina izifundo zami"
+            }
+        },
+        "structureNeed": {
+            "label": "Udinga isikhathi esingakanani?",
+            "helper": "Isakhiwo sisho ukuthi othile ukutshela ukuthi wenzeni futhi nini.",
+            "options": {
+                "more": "Ngisebenza kangcono ngesikhathi esingaphezulu",
+                "some": "Esinye isakhiwo sihle",
+                "less": "Ngithanda ukuzizamela izinto"
+            }
+        },
+        "stressFrequency": {
+            "label": "Uvame kangakanani ukuzizwa ucindezelekile noma ukhathazekile?",
+            "options": {
+                "rarely": "Kancane",
+                "sometimes": "Ngezinye izikhathi",
+                "often": "Kaningi",
+                "always": "Cishe njalo"
+            }
+        },
+        "sadnessFrequency": {
+            "label": "Uvame kangakanani ukuzizwa udangele noma uphansi?",
+            "options": {
+                "rarely": "Kancane",
+                "sometimes": "Ngezinye izikhathi",
+                "often": "Kaningi",
+                "always": "Cishe njalo"
+            }
+        },
+        "wellbeingSupportNote": "Kuvamile ukuzizwa ucindezelekile noma udangele ngezinye izikhathi. Uma uzizwa kanje kaningi, ukukhuluma nomuntu omethembayo kungasiza. Kukhona abantu abangakusekela."
+    },
+    "report": {
+        "title": "Umbiko Wendlela Yakho",
+        "greeting": "Sawubona {name}!",
+        "greetingNoName": "Sawubona!",
+        "intro": "Ngokususela ezimpendulweni zakho, nazi ezinye izimibono ngezinyathelo ezizayo zakho.",
+        "recommendation": "Isiphakamiso sethu kuwe:",
+        "pathA": {
+            "title": "Qhubeka uya eBangeni 12",
+            "description": "Ngosizo olufanele, ungasebenzela ukuqeda imatriki yakho. Lokhu kugcina iminyango eminingi ivulekile eyunivesithi noma ukufunda okwengeziwe.",
+            "icon": "🎓"
+        },
+        "pathB": {
+            "title": "IKolishi le-TVET noma Ukuqeqeshwa Kwamakhono",
+            "description": "Indlela yokwenza ngezandla lapho ufunda amakhono asebenzayo. Amakolishi e-TVET anikeza izifundo emkhakheni ominingi. Ungasebenza ngenkathi ufunda.",
+            "icon": "🔧"
+        },
+        "pathC": {
+            "title": "Indlela Ephindwe Kabili",
+            "description": "Qhubeka usebenza esikoleni ngenkathi uhlola ezinye izinketho njengama-learnerships noma izifundo zamakhono ezingama-part-time. Lokhu kukunikeza ukuguquguquka.",
+            "icon": "🔀"
+        },
+        "whyThisPath": "Kungani siphakamisa lokhu:",
+        "driver": "Ngoba",
+        "risks": "Izinto okufanele uzibheke:",
+        "mitigations": "Indlela yokubhekana nezinselelo:",
+        "actionChecklist": "Uhlelo Lwakho Lwezinsuku Eziyi-10",
+        "disclaimer": "Lesi siqondiso, hhayi impendulo yokugcina. Khuluma nothisha, umeluleki, noma umuntu omdala omethembayo ngalezi mibono.",
+        "export": {
+            "title": "Gcina noma Yabelana Ngombiko Wakho",
+            "copy": "Kopisha ku-Clipboard",
+            "copied": "Kukopishiwe!",
+            "downloadPdf": "Landa i-PDF",
+            "downloadJson": "Landa Izimpendulo",
+            "sendEmail": "Thumela nge-Email"
+        }
+    },
+    "email": {
+        "consentTitle": "Thumela Umbiko nge-Email",
+        "consentText": "Ufuna ukuthumela lo mbiko kumuntu?",
+        "recipientLabel": "Ikheli le-email:",
+        "consentCheckbox": "Ngiyavuma ukuthumela umbiko wami kuleli kheli le-email.",
+        "send": "Thumela Umbiko",
+        "sending": "Kuyathumela...",
+        "sent": "Umbiko uthunyelwe!",
+        "error": "Akukwazanga ukuthumela. Zama ukulanda esikhundleni salokho."
+    },
+    "errors": {
+        "configLoad": "Akukwazanga ukulayisha imibuzo. Sicela uvuselele ikhasi.",
+        "required": "Sicela uphendule lo mbuzo ukuze uqhubeke."
+    },
+    "submission": {
+        "title": "Kuthunyelwe!",
+        "message": "Izimpendulo zakho zithunyelwe kumgcini ukuze azihlole.",
+        "pending": "Kuyathumela...",
+        "success": "Kuthunyelwe ngempumelelo!",
+        "failed": "Ukuthumela akuphumelelanga.",
+        "failedMessage": "Izimpendulo zakho azikwazanga ukuthunyelwa. Sicela uhlole uxhumo lwakho lwe-inthanethi bese uzama futhi.",
+        "retry": "Zama futhi",
+        "consent": "Ngiyavuma ukuthumela izimpendulo zami kumgcini ukuze azihlole.",
+        "consentRequired": "Sicela ukhethe ibhokisi elingenhla ukuze uthumele.",
+        "confirmTitle": "Qinisekisa Ukuthumela",
+        "readyTitle": "Kulungele Ukuthumela",
+        "readyMessage": "Uphendule yonke imibuzo. Izimpendulo zakho zizothunyelwa ukuze zihlolwe.",
+        "submit": "Thumela Izimpendulo",
+        "backupTitle": "Gcina Ikhophi",
+        "backupDescription": "Landa ikhophi yezimpendulo zakho ngokulondoloza.",
+        "detailsTitle": "Imininingwane Yokuthumela",
+        "id": "I-ID Yokuthumela",
+        "pleaseWait": "Sicela ulinde..."
+    }
+}

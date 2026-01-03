@@ -1,0 +1,1220 @@
+{
+    "version": "1.0.0",
+    "sections": [
+        {
+            "id": "consent",
+            "title": "i18n:consent.title",
+            "questions": [
+                {
+                    "id": "consent_agree",
+                    "type": "consent",
+                    "required": true,
+                    "label": "i18n:consent.question",
+                    "intro": "i18n:consent.intro",
+                    "privacyNote": "i18n:consent.privacy"
+                }
+            ]
+        },
+        {
+            "id": "demographics",
+            "title": "About You",
+            "questions": [
+                {
+                    "id": "name",
+                    "type": "text",
+                    "required": false,
+                    "label": "i18n:questions.name.label",
+                    "helper": "i18n:questions.name.helper",
+                    "scoringDimension": null
+                },
+                {
+                    "id": "age",
+                    "type": "single",
+                    "required": true,
+                    "label": "i18n:questions.age.label",
+                    "icon": "👤",
+                    "options": [
+                        {
+                            "value": "under18",
+                            "label": "i18n:questions.age.options.under18",
+                            "icon": "🧒"
+                        },
+                        {
+                            "value": "18",
+                            "label": "i18n:questions.age.options.18",
+                            "icon": "🎂"
+                        },
+                        {
+                            "value": "19to21",
+                            "label": "i18n:questions.age.options.19to21",
+                            "icon": "🎓"
+                        },
+                        {
+                            "value": "over21",
+                            "label": "i18n:questions.age.options.over21",
+                            "icon": "👨"
+                        }
+                    ],
+                    "scoringDimension": null
+                }
+            ]
+        },
+        {
+            "id": "school_functioning",
+            "title": "School & Learning",
+            "questions": [
+                {
+                    "id": "attendance",
+                    "type": "single",
+                    "required": true,
+                    "label": "i18n:questions.attendance.label",
+                    "icon": "🏫",
+                    "options": [
+                        {
+                            "value": "always",
+                            "label": "i18n:questions.attendance.options.always",
+                            "icon": "✅",
+                            "score": {
+                                "academicReadiness": 100
+                            }
+                        },
+                        {
+                            "value": "often",
+                            "label": "i18n:questions.attendance.options.often",
+                            "icon": "📅",
+                            "score": {
+                                "academicReadiness": 75
+                            }
+                        },
+                        {
+                            "value": "sometimes",
+                            "label": "i18n:questions.attendance.options.sometimes",
+                            "icon": "🔄",
+                            "score": {
+                                "academicReadiness": 50
+                            }
+                        },
+                        {
+                            "value": "rarely",
+                            "label": "i18n:questions.attendance.options.rarely",
+                            "icon": "❌",
+                            "score": {
+                                "academicReadiness": 25
+                            }
+                        },
+                        {
+                            "value": "notInSchool",
+                            "label": "i18n:questions.attendance.options.notInSchool",
+                            "icon": "🚫",
+                            "score": {
+                                "academicReadiness": 0
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "studyHabits",
+                    "type": "single",
+                    "required": true,
+                    "label": "i18n:questions.studyHabits.label",
+                    "icon": "📚",
+                    "options": [
+                        {
+                            "value": "daily",
+                            "label": "i18n:questions.studyHabits.options.daily",
+                            "icon": "📖",
+                            "score": {
+                                "academicReadiness": 100
+                            }
+                        },
+                        {
+                            "value": "often",
+                            "label": "i18n:questions.studyHabits.options.often",
+                            "icon": "📝",
+                            "score": {
+                                "academicReadiness": 75
+                            }
+                        },
+                        {
+                            "value": "sometimes",
+                            "label": "i18n:questions.studyHabits.options.sometimes",
+                            "icon": "🔄",
+                            "score": {
+                                "academicReadiness": 50
+                            }
+                        },
+                        {
+                            "value": "rarely",
+                            "label": "i18n:questions.studyHabits.options.rarely",
+                            "icon": "😕",
+                            "score": {
+                                "academicReadiness": 25
+                            }
+                        },
+                        {
+                            "value": "never",
+                            "label": "i18n:questions.studyHabits.options.never",
+                            "icon": "❌",
+                            "score": {
+                                "academicReadiness": 0
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "concentration",
+                    "type": "single",
+                    "required": true,
+                    "label": "i18n:questions.concentration.label",
+                    "icon": "🎯",
+                    "options": [
+                        {
+                            "value": "veryWell",
+                            "label": "i18n:questions.concentration.options.veryWell",
+                            "icon": "💪",
+                            "score": {
+                                "academicReadiness": 100,
+                                "supportNeed": 0
+                            }
+                        },
+                        {
+                            "value": "okay",
+                            "label": "i18n:questions.concentration.options.okay",
+                            "icon": "👍",
+                            "score": {
+                                "academicReadiness": 70,
+                                "supportNeed": 30
+                            }
+                        },
+                        {
+                            "value": "sometimes",
+                            "label": "i18n:questions.concentration.options.sometimes",
+                            "icon": "🤔",
+                            "score": {
+                                "academicReadiness": 40,
+                                "supportNeed": 60
+                            }
+                        },
+                        {
+                            "value": "difficult",
+                            "label": "i18n:questions.concentration.options.difficult",
+                            "icon": "😓",
+                            "score": {
+                                "academicReadiness": 20,
+                                "supportNeed": 80
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "languageComfort",
+                    "type": "single",
+                    "required": true,
+                    "label": "i18n:questions.languageComfort.label",
+                    "icon": "🗣️",
+                    "options": [
+                        {
+                            "value": "comfortable",
+                            "label": "i18n:questions.languageComfort.options.comfortable",
+                            "icon": "😊",
+                            "score": {
+                                "academicReadiness": 100
+                            }
+                        },
+                        {
+                            "value": "manageable",
+                            "label": "i18n:questions.languageComfort.options.manageable",
+                            "icon": "🙂",
+                            "score": {
+                                "academicReadiness": 70
+                            }
+                        },
+                        {
+                            "value": "difficult",
+                            "label": "i18n:questions.languageComfort.options.difficult",
+                            "icon": "😟",
+                            "score": {
+                                "academicReadiness": 40,
+                                "supportNeed": 60
+                            }
+                        },
+                        {
+                            "value": "veryDifficult",
+                            "label": "i18n:questions.languageComfort.options.veryDifficult",
+                            "icon": "😣",
+                            "score": {
+                                "academicReadiness": 20,
+                                "supportNeed": 80
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "classParticipation",
+                    "type": "single",
+                    "required": true,
+                    "label": "i18n:questions.classParticipation.label",
+                    "icon": "🙋",
+                    "options": [
+                        {
+                            "value": "often",
+                            "label": "i18n:questions.classParticipation.options.often",
+                            "icon": "🌟",
+                            "score": {
+                                "academicReadiness": 100
+                            }
+                        },
+                        {
+                            "value": "sometimes",
+                            "label": "i18n:questions.classParticipation.options.sometimes",
+                            "icon": "✋",
+                            "score": {
+                                "academicReadiness": 70
+                            }
+                        },
+                        {
+                            "value": "rarely",
+                            "label": "i18n:questions.classParticipation.options.rarely",
+                            "icon": "😶",
+                            "score": {
+                                "academicReadiness": 40
+                            }
+                        },
+                        {
+                            "value": "never",
+                            "label": "i18n:questions.classParticipation.options.never",
+                            "icon": "🤐",
+                            "score": {
+                                "academicReadiness": 20,
+                                "supportNeed": 50
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "academic_signals",
+            "title": "Your Marks & Progress",
+            "questions": [
+                {
+                    "id": "marksRange",
+                    "type": "single",
+                    "required": true,
+                    "label": "i18n:questions.marksRange.label",
+                    "icon": "📊",
+                    "options": [
+                        {
+                            "value": "above70",
+                            "label": "i18n:questions.marksRange.options.above70",
+                            "icon": "🏆",
+                            "score": {
+                                "academicReadiness": 100
+                            }
+                        },
+                        {
+                            "value": "50to70",
+                            "label": "i18n:questions.marksRange.options.50to70",
+                            "icon": "✔️",
+                            "score": {
+                                "academicReadiness": 75
+                            }
+                        },
+                        {
+                            "value": "30to50",
+                            "label": "i18n:questions.marksRange.options.30to50",
+                            "icon": "⚠️",
+                            "score": {
+                                "academicReadiness": 40
+                            }
+                        },
+                        {
+                            "value": "below30",
+                            "label": "i18n:questions.marksRange.options.below30",
+                            "icon": "📉",
+                            "score": {
+                                "academicReadiness": 15
+                            }
+                        },
+                        {
+                            "value": "dontKnow",
+                            "label": "i18n:questions.marksRange.options.dontKnow",
+                            "icon": "❓",
+                            "score": {
+                                "academicReadiness": 30
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "repeatedGrade",
+                    "type": "single",
+                    "required": true,
+                    "label": "i18n:questions.repeatedGrade.label",
+                    "icon": "🔁",
+                    "options": [
+                        {
+                            "value": "no",
+                            "label": "i18n:questions.repeatedGrade.options.no",
+                            "icon": "✅",
+                            "score": {
+                                "academicReadiness": 100
+                            }
+                        },
+                        {
+                            "value": "onceRecently",
+                            "label": "i18n:questions.repeatedGrade.options.onceRecently",
+                            "icon": "🔄",
+                            "score": {
+                                "academicReadiness": 40,
+                                "supportNeed": 60
+                            }
+                        },
+                        {
+                            "value": "onceBefore",
+                            "label": "i18n:questions.repeatedGrade.options.onceBefore",
+                            "icon": "📅",
+                            "score": {
+                                "academicReadiness": 60,
+                                "supportNeed": 40
+                            }
+                        },
+                        {
+                            "value": "moreThanOnce",
+                            "label": "i18n:questions.repeatedGrade.options.moreThanOnce",
+                            "icon": "⚠️",
+                            "score": {
+                                "academicReadiness": 20,
+                                "supportNeed": 80
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "schoolBlockers",
+                    "type": "multi",
+                    "required": false,
+                    "label": "i18n:questions.schoolBlockers.label",
+                    "helper": "i18n:questions.schoolBlockers.helper",
+                    "icon": "🚧",
+                    "showIf": {
+                        "marksRange": [
+                            "30to50",
+                            "below30"
+                        ]
+                    },
+                    "options": [
+                        {
+                            "value": "understanding",
+                            "label": "i18n:questions.schoolBlockers.options.understanding",
+                            "icon": "🤷",
+                            "score": {
+                                "supportNeed": 20
+                            }
+                        },
+                        {
+                            "value": "language",
+                            "label": "i18n:questions.schoolBlockers.options.language",
+                            "icon": "🗣️",
+                            "score": {
+                                "supportNeed": 20
+                            }
+                        },
+                        {
+                            "value": "attendance",
+                            "label": "i18n:questions.schoolBlockers.options.attendance",
+                            "icon": "🏫",
+                            "score": {
+                                "constraintLoad": 20
+                            }
+                        },
+                        {
+                            "value": "homeProblems",
+                            "label": "i18n:questions.schoolBlockers.options.homeProblems",
+                            "icon": "🏠",
+                            "score": {
+                                "constraintLoad": 25
+                            }
+                        },
+                        {
+                            "value": "health",
+                            "label": "i18n:questions.schoolBlockers.options.health",
+                            "icon": "💊",
+                            "score": {
+                                "constraintLoad": 20
+                            }
+                        },
+                        {
+                            "value": "noSupport",
+                            "label": "i18n:questions.schoolBlockers.options.noSupport",
+                            "icon": "🆘",
+                            "score": {
+                                "supportNeed": 25
+                            }
+                        },
+                        {
+                            "value": "noResources",
+                            "label": "i18n:questions.schoolBlockers.options.noResources",
+                            "icon": "📱",
+                            "score": {
+                                "constraintLoad": 15
+                            }
+                        },
+                        {
+                            "value": "other",
+                            "label": "i18n:questions.schoolBlockers.options.other",
+                            "icon": "❓",
+                            "score": {}
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "learning_style",
+            "title": "How You Learn",
+            "questions": [
+                {
+                    "id": "learningStyle",
+                    "type": "single",
+                    "required": true,
+                    "label": "i18n:questions.learningStyle.label",
+                    "icon": "🧠",
+                    "options": [
+                        {
+                            "value": "practical",
+                            "label": "i18n:questions.learningStyle.options.practical",
+                            "icon": "🔧",
+                            "score": {
+                                "practicalPreference": 100
+                            }
+                        },
+                        {
+                            "value": "watching",
+                            "label": "i18n:questions.learningStyle.options.watching",
+                            "icon": "👀",
+                            "score": {
+                                "practicalPreference": 70
+                            }
+                        },
+                        {
+                            "value": "reading",
+                            "label": "i18n:questions.learningStyle.options.reading",
+                            "icon": "📖",
+                            "score": {
+                                "practicalPreference": 20
+                            }
+                        },
+                        {
+                            "value": "mixed",
+                            "label": "i18n:questions.learningStyle.options.mixed",
+                            "icon": "🔀",
+                            "score": {
+                                "practicalPreference": 50
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "practicalVsTheory",
+                    "type": "single",
+                    "required": true,
+                    "label": "i18n:questions.practicalVsTheory.label",
+                    "icon": "⚖️",
+                    "options": [
+                        {
+                            "value": "practical",
+                            "label": "i18n:questions.practicalVsTheory.options.practical",
+                            "icon": "🛠️",
+                            "score": {
+                                "practicalPreference": 100
+                            }
+                        },
+                        {
+                            "value": "theory",
+                            "label": "i18n:questions.practicalVsTheory.options.theory",
+                            "icon": "📚",
+                            "score": {
+                                "practicalPreference": 0
+                            }
+                        },
+                        {
+                            "value": "both",
+                            "label": "i18n:questions.practicalVsTheory.options.both",
+                            "icon": "🔀",
+                            "score": {
+                                "practicalPreference": 50
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "interests",
+            "title": "Your Interests",
+            "questions": [
+                {
+                    "id": "workEnvironment",
+                    "type": "single",
+                    "required": true,
+                    "label": "i18n:questions.workEnvironment.label",
+                    "icon": "🏢",
+                    "options": [
+                        {
+                            "value": "office",
+                            "label": "i18n:questions.workEnvironment.options.office",
+                            "icon": "💻"
+                        },
+                        {
+                            "value": "outdoors",
+                            "label": "i18n:questions.workEnvironment.options.outdoors",
+                            "icon": "🌳"
+                        },
+                        {
+                            "value": "people",
+                            "label": "i18n:questions.workEnvironment.options.people",
+                            "icon": "👥"
+                        },
+                        {
+                            "value": "creative",
+                            "label": "i18n:questions.workEnvironment.options.creative",
+                            "icon": "🎨"
+                        },
+                        {
+                            "value": "varied",
+                            "label": "i18n:questions.workEnvironment.options.varied",
+                            "icon": "🎲"
+                        }
+                    ]
+                },
+                {
+                    "id": "interestAreas",
+                    "type": "multi",
+                    "required": true,
+                    "label": "i18n:questions.interestAreas.label",
+                    "helper": "i18n:questions.interestAreas.helper",
+                    "icon": "💡",
+                    "maxSelections": 3,
+                    "options": [
+                        {
+                            "value": "fixing",
+                            "label": "i18n:questions.interestAreas.options.fixing",
+                            "icon": "🔧",
+                            "score": {
+                                "practicalPreference": 20
+                            }
+                        },
+                        {
+                            "value": "computers",
+                            "label": "i18n:questions.interestAreas.options.computers",
+                            "icon": "💻"
+                        },
+                        {
+                            "value": "helping",
+                            "label": "i18n:questions.interestAreas.options.helping",
+                            "icon": "🤝"
+                        },
+                        {
+                            "value": "business",
+                            "label": "i18n:questions.interestAreas.options.business",
+                            "icon": "💼"
+                        },
+                        {
+                            "value": "cooking",
+                            "label": "i18n:questions.interestAreas.options.cooking",
+                            "icon": "🍳",
+                            "score": {
+                                "practicalPreference": 15
+                            }
+                        },
+                        {
+                            "value": "beauty",
+                            "label": "i18n:questions.interestAreas.options.beauty",
+                            "icon": "💅",
+                            "score": {
+                                "practicalPreference": 15
+                            }
+                        },
+                        {
+                            "value": "building",
+                            "label": "i18n:questions.interestAreas.options.building",
+                            "icon": "🏗️",
+                            "score": {
+                                "practicalPreference": 20
+                            }
+                        },
+                        {
+                            "value": "farming",
+                            "label": "i18n:questions.interestAreas.options.farming",
+                            "icon": "🌾",
+                            "score": {
+                                "practicalPreference": 20
+                            }
+                        },
+                        {
+                            "value": "art",
+                            "label": "i18n:questions.interestAreas.options.art",
+                            "icon": "🎨"
+                        },
+                        {
+                            "value": "sports",
+                            "label": "i18n:questions.interestAreas.options.sports",
+                            "icon": "⚽",
+                            "score": {
+                                "practicalPreference": 15
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "routineVsVariety",
+                    "type": "single",
+                    "required": true,
+                    "label": "i18n:questions.routineVsVariety.label",
+                    "icon": "📆",
+                    "options": [
+                        {
+                            "value": "routine",
+                            "label": "i18n:questions.routineVsVariety.options.routine",
+                            "icon": "📋"
+                        },
+                        {
+                            "value": "variety",
+                            "label": "i18n:questions.routineVsVariety.options.variety",
+                            "icon": "🎲"
+                        },
+                        {
+                            "value": "noPreference",
+                            "label": "i18n:questions.routineVsVariety.options.noPreference",
+                            "icon": "🤷"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "strengths",
+            "title": "Your Strengths",
+            "questions": [
+                {
+                    "id": "strengths",
+                    "type": "multi",
+                    "required": true,
+                    "label": "i18n:questions.strengths.label",
+                    "helper": "i18n:questions.strengths.helper",
+                    "icon": "💪",
+                    "maxSelections": 2,
+                    "options": [
+                        {
+                            "value": "hands",
+                            "label": "i18n:questions.strengths.options.hands",
+                            "icon": "🔧",
+                            "score": {
+                                "practicalPreference": 20
+                            }
+                        },
+                        {
+                            "value": "people",
+                            "label": "i18n:questions.strengths.options.people",
+                            "icon": "🗣️"
+                        },
+                        {
+                            "value": "solving",
+                            "label": "i18n:questions.strengths.options.solving",
+                            "icon": "🧩"
+                        },
+                        {
+                            "value": "organizing",
+                            "label": "i18n:questions.strengths.options.organizing",
+                            "icon": "📁"
+                        },
+                        {
+                            "value": "creative",
+                            "label": "i18n:questions.strengths.options.creative",
+                            "icon": "🎨"
+                        },
+                        {
+                            "value": "helping",
+                            "label": "i18n:questions.strengths.options.helping",
+                            "icon": "🤝"
+                        }
+                    ]
+                },
+                {
+                    "id": "strengthExample",
+                    "type": "textarea",
+                    "required": false,
+                    "label": "i18n:questions.strengthExample.label",
+                    "helper": "i18n:questions.strengthExample.helper",
+                    "placeholder": "i18n:questions.strengthExample.placeholder",
+                    "icon": "✍️"
+                }
+            ]
+        },
+        {
+            "id": "values_goals",
+            "title": "What Matters to You",
+            "questions": [
+                {
+                    "id": "valuesImportant",
+                    "type": "multi",
+                    "required": true,
+                    "label": "i18n:questions.valuesImportant.label",
+                    "helper": "i18n:questions.valuesImportant.helper",
+                    "icon": "⭐",
+                    "maxSelections": 2,
+                    "options": [
+                        {
+                            "value": "money",
+                            "label": "i18n:questions.valuesImportant.options.money",
+                            "icon": "💰"
+                        },
+                        {
+                            "value": "stability",
+                            "label": "i18n:questions.valuesImportant.options.stability",
+                            "icon": "🏠"
+                        },
+                        {
+                            "value": "meaning",
+                            "label": "i18n:questions.valuesImportant.options.meaning",
+                            "icon": "❤️"
+                        },
+                        {
+                            "value": "independence",
+                            "label": "i18n:questions.valuesImportant.options.independence",
+                            "icon": "🚀"
+                        },
+                        {
+                            "value": "growth",
+                            "label": "i18n:questions.valuesImportant.options.growth",
+                            "icon": "📈"
+                        }
+                    ]
+                },
+                {
+                    "id": "shortTermGoal",
+                    "type": "single",
+                    "required": true,
+                    "label": "i18n:questions.shortTermGoal.label",
+                    "icon": "🎯",
+                    "options": [
+                        {
+                            "value": "finishSchool",
+                            "label": "i18n:questions.shortTermGoal.options.finishSchool",
+                            "icon": "🎓"
+                        },
+                        {
+                            "value": "findWork",
+                            "label": "i18n:questions.shortTermGoal.options.findWork",
+                            "icon": "💼"
+                        },
+                        {
+                            "value": "learnSkill",
+                            "label": "i18n:questions.shortTermGoal.options.learnSkill",
+                            "icon": "🔧",
+                            "score": {
+                                "practicalPreference": 20
+                            }
+                        },
+                        {
+                            "value": "improveMarks",
+                            "label": "i18n:questions.shortTermGoal.options.improveMarks",
+                            "icon": "📈"
+                        },
+                        {
+                            "value": "figureOut",
+                            "label": "i18n:questions.shortTermGoal.options.figureOut",
+                            "icon": "🤔"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "constraints",
+            "title": "Your Situation",
+            "questions": [
+                {
+                    "id": "transportAccess",
+                    "type": "single",
+                    "required": true,
+                    "label": "i18n:questions.transportAccess.label",
+                    "icon": "🚌",
+                    "options": [
+                        {
+                            "value": "easy",
+                            "label": "i18n:questions.transportAccess.options.easy",
+                            "icon": "✅",
+                            "score": {
+                                "constraintLoad": 0
+                            }
+                        },
+                        {
+                            "value": "manageable",
+                            "label": "i18n:questions.transportAccess.options.manageable",
+                            "icon": "🙂",
+                            "score": {
+                                "constraintLoad": 25
+                            }
+                        },
+                        {
+                            "value": "difficult",
+                            "label": "i18n:questions.transportAccess.options.difficult",
+                            "icon": "😟",
+                            "score": {
+                                "constraintLoad": 60
+                            }
+                        },
+                        {
+                            "value": "veryDifficult",
+                            "label": "i18n:questions.transportAccess.options.veryDifficult",
+                            "icon": "😣",
+                            "score": {
+                                "constraintLoad": 90
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "financialSituation",
+                    "type": "single",
+                    "required": true,
+                    "label": "i18n:questions.financialSituation.label",
+                    "icon": "💵",
+                    "options": [
+                        {
+                            "value": "okay",
+                            "label": "i18n:questions.financialSituation.options.okay",
+                            "icon": "✅",
+                            "score": {
+                                "constraintLoad": 0
+                            }
+                        },
+                        {
+                            "value": "tight",
+                            "label": "i18n:questions.financialSituation.options.tight",
+                            "icon": "😐",
+                            "score": {
+                                "constraintLoad": 40
+                            }
+                        },
+                        {
+                            "value": "difficult",
+                            "label": "i18n:questions.financialSituation.options.difficult",
+                            "icon": "😟",
+                            "score": {
+                                "constraintLoad": 80
+                            }
+                        },
+                        {
+                            "value": "preferNot",
+                            "label": "i18n:questions.financialSituation.options.preferNot",
+                            "icon": "🔒",
+                            "score": {
+                                "constraintLoad": 30
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "homeResponsibilities",
+                    "type": "single",
+                    "required": true,
+                    "label": "i18n:questions.homeResponsibilities.label",
+                    "icon": "🏠",
+                    "options": [
+                        {
+                            "value": "no",
+                            "label": "i18n:questions.homeResponsibilities.options.no",
+                            "icon": "✅",
+                            "score": {
+                                "constraintLoad": 0
+                            }
+                        },
+                        {
+                            "value": "some",
+                            "label": "i18n:questions.homeResponsibilities.options.some",
+                            "icon": "🙂",
+                            "score": {
+                                "constraintLoad": 25
+                            }
+                        },
+                        {
+                            "value": "many",
+                            "label": "i18n:questions.homeResponsibilities.options.many",
+                            "icon": "😓",
+                            "score": {
+                                "constraintLoad": 60
+                            }
+                        },
+                        {
+                            "value": "caring",
+                            "label": "i18n:questions.homeResponsibilities.options.caring",
+                            "icon": "💗",
+                            "score": {
+                                "constraintLoad": 80
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "deviceAccess",
+                    "type": "single",
+                    "required": true,
+                    "label": "i18n:questions.deviceAccess.label",
+                    "icon": "📱",
+                    "options": [
+                        {
+                            "value": "yes",
+                            "label": "i18n:questions.deviceAccess.options.yes",
+                            "icon": "✅",
+                            "score": {
+                                "constraintLoad": 0
+                            }
+                        },
+                        {
+                            "value": "limited",
+                            "label": "i18n:questions.deviceAccess.options.limited",
+                            "icon": "🔄",
+                            "score": {
+                                "constraintLoad": 30
+                            }
+                        },
+                        {
+                            "value": "no",
+                            "label": "i18n:questions.deviceAccess.options.no",
+                            "icon": "❌",
+                            "score": {
+                                "constraintLoad": 50
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "safety",
+                    "type": "single",
+                    "required": true,
+                    "label": "i18n:questions.safety.label",
+                    "icon": "🛡️",
+                    "options": [
+                        {
+                            "value": "yes",
+                            "label": "i18n:questions.safety.options.yes",
+                            "icon": "✅",
+                            "score": {
+                                "constraintLoad": 0
+                            }
+                        },
+                        {
+                            "value": "mostly",
+                            "label": "i18n:questions.safety.options.mostly",
+                            "icon": "⚠️",
+                            "score": {
+                                "constraintLoad": 30
+                            }
+                        },
+                        {
+                            "value": "no",
+                            "label": "i18n:questions.safety.options.no",
+                            "icon": "🚨",
+                            "score": {
+                                "constraintLoad": 70,
+                                "wellbeingFlag": 30
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "support",
+            "title": "Help & Support",
+            "questions": [
+                {
+                    "id": "supportOpenness",
+                    "type": "single",
+                    "required": true,
+                    "label": "i18n:questions.supportOpenness.label",
+                    "helper": "i18n:questions.supportOpenness.helper",
+                    "icon": "🤝",
+                    "options": [
+                        {
+                            "value": "yes",
+                            "label": "i18n:questions.supportOpenness.options.yes",
+                            "icon": "✅",
+                            "score": {
+                                "supportNeed": 20
+                            }
+                        },
+                        {
+                            "value": "maybe",
+                            "label": "i18n:questions.supportOpenness.options.maybe",
+                            "icon": "🤔",
+                            "score": {
+                                "supportNeed": 10
+                            }
+                        },
+                        {
+                            "value": "no",
+                            "label": "i18n:questions.supportOpenness.options.no",
+                            "icon": "🙅",
+                            "score": {
+                                "supportNeed": 0
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "subjectChange",
+                    "type": "single",
+                    "required": true,
+                    "label": "i18n:questions.subjectChange.label",
+                    "icon": "🔄",
+                    "options": [
+                        {
+                            "value": "yes",
+                            "label": "i18n:questions.subjectChange.options.yes",
+                            "icon": "✅"
+                        },
+                        {
+                            "value": "maybe",
+                            "label": "i18n:questions.subjectChange.options.maybe",
+                            "icon": "🤔"
+                        },
+                        {
+                            "value": "no",
+                            "label": "i18n:questions.subjectChange.options.no",
+                            "icon": "✋"
+                        }
+                    ]
+                },
+                {
+                    "id": "structureNeed",
+                    "type": "single",
+                    "required": true,
+                    "label": "i18n:questions.structureNeed.label",
+                    "helper": "i18n:questions.structureNeed.helper",
+                    "icon": "📋",
+                    "options": [
+                        {
+                            "value": "more",
+                            "label": "i18n:questions.structureNeed.options.more",
+                            "icon": "📊",
+                            "score": {
+                                "supportNeed": 40
+                            }
+                        },
+                        {
+                            "value": "some",
+                            "label": "i18n:questions.structureNeed.options.some",
+                            "icon": "📝",
+                            "score": {
+                                "supportNeed": 20
+                            }
+                        },
+                        {
+                            "value": "less",
+                            "label": "i18n:questions.structureNeed.options.less",
+                            "icon": "🌊",
+                            "score": {
+                                "supportNeed": 0
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "wellbeing",
+            "title": "How You Feel",
+            "questions": [
+                {
+                    "id": "stressFrequency",
+                    "type": "single",
+                    "required": true,
+                    "label": "i18n:questions.stressFrequency.label",
+                    "icon": "😰",
+                    "options": [
+                        {
+                            "value": "rarely",
+                            "label": "i18n:questions.stressFrequency.options.rarely",
+                            "icon": "😊",
+                            "score": {
+                                "wellbeingFlag": 0
+                            }
+                        },
+                        {
+                            "value": "sometimes",
+                            "label": "i18n:questions.stressFrequency.options.sometimes",
+                            "icon": "😐",
+                            "score": {
+                                "wellbeingFlag": 25
+                            }
+                        },
+                        {
+                            "value": "often",
+                            "label": "i18n:questions.stressFrequency.options.often",
+                            "icon": "😟",
+                            "score": {
+                                "wellbeingFlag": 60
+                            }
+                        },
+                        {
+                            "value": "always",
+                            "label": "i18n:questions.stressFrequency.options.always",
+                            "icon": "😰",
+                            "score": {
+                                "wellbeingFlag": 90
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "sadnessFrequency",
+                    "type": "single",
+                    "required": true,
+                    "label": "i18n:questions.sadnessFrequency.label",
+                    "icon": "😢",
+                    "options": [
+                        {
+                            "value": "rarely",
+                            "label": "i18n:questions.sadnessFrequency.options.rarely",
+                            "icon": "😊",
+                            "score": {
+                                "wellbeingFlag": 0
+                            }
+                        },
+                        {
+                            "value": "sometimes",
+                            "label": "i18n:questions.sadnessFrequency.options.sometimes",
+                            "icon": "😐",
+                            "score": {
+                                "wellbeingFlag": 25
+                            }
+                        },
+                        {
+                            "value": "often",
+                            "label": "i18n:questions.sadnessFrequency.options.often",
+                            "icon": "😔",
+                            "score": {
+                                "wellbeingFlag": 60
+                            }
+                        },
+                        {
+                            "value": "always",
+                            "label": "i18n:questions.sadnessFrequency.options.always",
+                            "icon": "😢",
+                            "score": {
+                                "wellbeingFlag": 90
+                            }
+                        }
+                    ]
+                }
+            ],
+            "showSupportNote": true,
+            "supportNoteKey": "i18n:questions.wellbeingSupportNote"
+        }
+    ],
+    "totalQuestions": 27
+}
